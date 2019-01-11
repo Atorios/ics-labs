@@ -1,0 +1,4 @@
+1.ps aux | tail -n +2 | sort -k 11
+2.cat /usr/share/dict/words | grep ^[aA].* | wc -w
+3.ls -lSr /etc | grep .conf | head -n 5
+4.echo echo hello, world! >> echo.sh 

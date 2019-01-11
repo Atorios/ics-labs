@@ -1,0 +1,36 @@
+gen_sort.c: In function ‘gen_rec’:
+gen_sort.c:122:2: warning: implicit declaration of function ‘sprintf’ [-Wimplicit-function-declaration]
+  sprintf(rec->recno, "%10d", recno++);
+  ^
+gen_sort.c:122:2: warning: incompatible implicit declaration of built-in function ‘sprintf’
+gen_sort.c:122:2: note: include ‘<stdio.h>’ or provide a declaration of ‘sprintf’
+gen_sort.c: In function ‘usage’:
+gen_sort.c:157:2: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  printf("usage: %s <#record> <filename> \n", fn);
+  ^
+gen_sort.c:157:2: warning: incompatible implicit declaration of built-in function ‘printf’
+gen_sort.c:157:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+gen_sort.c: In function ‘main’:
+gen_sort.c:172:3: warning: incompatible implicit declaration of built-in function ‘printf’
+   printf("error: #record less than 0 [%ld]\n", rec_max);
+   ^
+gen_sort.c:172:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+gen_sort.c:177:2: warning: incompatible implicit declaration of built-in function ‘printf’
+  printf("gen_sort running ... with [%ld, %s]\n", rec_max, fn);
+  ^
+gen_sort.c:177:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+gen_sort.c:187:2: error: unknown type name ‘FILE’
+  FILE *file = fopen(fn, "r");
+  ^
+gen_sort.c:187:15: warning: implicit declaration of function ‘fopen’ [-Wimplicit-function-declaration]
+  FILE *file = fopen(fn, "r");
+               ^
+gen_sort.c:187:15: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+gen_sort.c:196:18: warning: implicit declaration of function ‘fwrite’ [-Wimplicit-function-declaration]
+   int ret = (int)fwrite(buf, 1, cnt * rec_len, file);
+                  ^
+gen_sort.c:196:18: warning: incompatible implicit declaration of built-in function ‘fwrite’
+gen_sort.c:196:18: note: include ‘<stdio.h>’ or provide a declaration of ‘fwrite’
+gen_sort.c:200:4: warning: implicit declaration of function ‘fclose’ [-Wimplicit-function-declaration]
+    fclose(file);
+    ^

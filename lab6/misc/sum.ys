@@ -1,0 +1,57 @@
+# name: 黎君
+# id: 516030910233
+
+	.pos 0
+init:
+	irmovq Stack, %rsp
+	irmovq Stack, %rbp
+	call Main
+	halt
+
+	.align 8
+ele1:
+	.quad 0x00a
+	.quad ele2
+ele2:
+	.quad 0x0b0
+	.quad ele3
+ele3:
+	.quad 0xc00
+	.quad 0
+
+Main:
+	pushq %rbp
+	rrmovq %rsp, %rbp
+	irmovq ele1, %rdi
+	call sum_list
+	rrmovq %rbp, %rsp
+	popq %rbp
+	ret
+
+
+sum_list:
+	pushq %rbp
+	rrmovq %rsp, %rbp
+	irmovq $0x8, %rax
+	subq %rax, %rsp
+
+	rmmovq %rdi, -8(%rbp)
+	mrmovq -8(%rbp), %rdx
+	irmovq $0, %rax
+	jmp test
+Loop:
+	mrmovq -8(%rbp), %rdx
+	mrmovq (%rdx), %rcx
+	addq %rcx, %rax
+	mrmovq 8(%rdx), %rdx
+	rmmovq %rdx, -8(%rbp)
+test:
+	andq %rdx, %rdx
+	jne Loop
+
+	rrmovq %rbp, %rsp
+	popq %rbp
+	ret
+
+.pos 0x200
+Stack:

@@ -1,0 +1,1835 @@
+22:31:45.655302 execve("./client", ["./client", "192.168.1.107", "9066"], [/* 75 vars */]) = 0
+22:31:45.656253 brk(NULL)               = 0x561b6888f000
+22:31:45.656394 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+22:31:45.656493 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+22:31:45.656558 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+22:31:45.656626 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+22:31:45.656691 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f039bfb8000
+22:31:45.656751 close(3)                = 0
+22:31:45.656807 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+22:31:45.656880 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+22:31:45.656978 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+22:31:45.657042 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+22:31:45.657100 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f039bfb7000
+22:31:45.657165 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f039bb9f000
+22:31:45.657225 mprotect(0x7f039bbb7000, 2093056, PROT_NONE) = 0
+22:31:45.657288 mmap(0x7f039bdb6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f039bdb6000
+22:31:45.657363 mmap(0x7f039bdb8000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f039bdb8000
+22:31:45.657432 close(3)                = 0
+22:31:45.657495 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+22:31:45.657559 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+22:31:45.657621 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+22:31:45.657679 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+22:31:45.657737 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f039b7d5000
+22:31:45.657797 mprotect(0x7f039b995000, 2097152, PROT_NONE) = 0
+22:31:45.657860 mmap(0x7f039bb95000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f039bb95000
+22:31:45.657932 mmap(0x7f039bb9b000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f039bb9b000
+22:31:45.658001 close(3)                = 0
+22:31:45.658080 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f039bfb6000
+22:31:45.658144 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f039bfb5000
+22:31:45.658202 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f039bfb4000
+22:31:45.658258 arch_prctl(ARCH_SET_FS, 0x7f039bfb5700) = 0
+22:31:45.658408 mprotect(0x7f039bb95000, 16384, PROT_READ) = 0
+22:31:45.658484 mprotect(0x7f039bdb6000, 4096, PROT_READ) = 0
+22:31:45.658596 mprotect(0x561b67ec7000, 4096, PROT_READ) = 0
+22:31:45.658658 mprotect(0x7f039bfe1000, 4096, PROT_READ) = 0
+22:31:45.658715 munmap(0x7f039bfb8000, 167722) = 0
+22:31:45.658782 set_tid_address(0x7f039bfb59d0) = 8188
+22:31:45.658832 set_robust_list(0x7f039bfb59e0, 24) = 0
+22:31:45.658889 rt_sigaction(SIGRTMIN, {0x7f039bba4b50, [], SA_RESTORER|SA_SIGINFO, 0x7f039bbb0390}, NULL, 8) = 0
+22:31:45.658950 rt_sigaction(SIGRT_1, {0x7f039bba4be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f039bbb0390}, NULL, 8) = 0
+22:31:45.659005 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+22:31:45.659070 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+22:31:45.659169 rt_sigaction(SIGUSR1, {0x561b67cc3296, ~[RTMIN RT_1], SA_RESTORER, 0x7f039bbb0390}, NULL, 8) = 0
+22:31:45.659247 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+22:31:45.659387 brk(NULL)               = 0x561b6888f000
+22:31:45.659439 brk(0x561b688b0000)     = 0x561b688b0000
+22:31:45.659498 write(1, "ready\n", 6)  = 6
+22:31:45.659582 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+22:31:45.659647 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+22:31:45.659711 getsockname(3, {sa_family=AF_NETLINK, pid=8188, groups=00000000}, [12]) = 0
+22:31:45.659794 sendto(3, "\24\0\0\0\26\0\1\3Qd\r[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+22:31:45.659892 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0Qd\r[\374\37\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 164
+22:31:45.659980 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0Qd\r[\374\37\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+22:31:45.660053 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0Qd\r[\374\37\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+22:31:45.660120 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+22:31:45.660180 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+22:31:45.660257 close(4)                = 0
+22:31:45.660317 close(3)                = 0
+22:31:45.660390 socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+22:31:45.660456 connect(3, {sa_family=AF_INET, sin_port=htons(9066), sin_addr=inet_addr("192.168.1.107")}, 16) = 0
+22:31:45.660603 write(1, "connected\n", 10) = 10
+22:31:45.660670 fcntl(3, F_GETFL)       = 0x2 (flags O_RDWR)
+22:31:45.660730 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+22:31:45.660795 read(0, "send 99\n", 1024) = 8
+22:31:45.729283 read(0, "47455420687474703a2f2f3132372e30"..., 1024) = 199
+22:31:45.779431 fstat(3, {st_mode=S_IFSOCK|0777, st_size=0, ...}) = 0
+22:31:45.779549 write(3, "GET http://127.0.0.1:40123/ HTTP"..., 99) = 99
+22:31:45.779658 read(0, "readline\n", 1024) = 9
+22:31:46.134396 read(3, strace: Process 8188 detached
+ <detached ...>
+22:31:49.856445 execve("./client", ["./client", "127.0.0.1", "50883"], [/* 75 vars */]) = 0
+22:31:49.857439 brk(NULL)               = 0x558181feb000
+22:31:49.857625 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+22:31:49.857781 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+22:31:49.857900 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+22:31:49.857981 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+22:31:49.858069 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7e30da5000
+22:31:49.858146 close(3)                = 0
+22:31:49.858214 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+22:31:49.858300 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+22:31:49.858375 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+22:31:49.858447 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+22:31:49.858520 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7e30da4000
+22:31:49.858598 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7e3098c000
+22:31:49.858678 mprotect(0x7f7e309a4000, 2093056, PROT_NONE) = 0
+22:31:49.858757 mmap(0x7f7e30ba3000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f7e30ba3000
+22:31:49.858844 mmap(0x7f7e30ba5000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7e30ba5000
+22:31:49.858922 close(3)                = 0
+22:31:49.858994 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+22:31:49.859066 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+22:31:49.859141 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+22:31:49.859211 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+22:31:49.859279 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7e305c2000
+22:31:49.859350 mprotect(0x7f7e30782000, 2097152, PROT_NONE) = 0
+22:31:49.859425 mmap(0x7f7e30982000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f7e30982000
+22:31:49.859507 mmap(0x7f7e30988000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7e30988000
+22:31:49.859602 close(3)                = 0
+22:31:49.859694 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7e30da3000
+22:31:49.859766 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7e30da2000
+22:31:49.859833 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7e30da1000
+22:31:49.859900 arch_prctl(ARCH_SET_FS, 0x7f7e30da2700) = 0
+22:31:49.860070 mprotect(0x7f7e30982000, 16384, PROT_READ) = 0
+22:31:49.860157 mprotect(0x7f7e30ba3000, 4096, PROT_READ) = 0
+22:31:49.860275 mprotect(0x55818023e000, 4096, PROT_READ) = 0
+22:31:49.860345 mprotect(0x7f7e30dce000, 4096, PROT_READ) = 0
+22:31:49.860415 munmap(0x7f7e30da5000, 167722) = 0
+22:31:49.860496 set_tid_address(0x7f7e30da29d0) = 8220
+22:31:49.860557 set_robust_list(0x7f7e30da29e0, 24) = 0
+22:31:49.860627 rt_sigaction(SIGRTMIN, {0x7f7e30991b50, [], SA_RESTORER|SA_SIGINFO, 0x7f7e3099d390}, NULL, 8) = 0
+22:31:49.860702 rt_sigaction(SIGRT_1, {0x7f7e30991be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f7e3099d390}, NULL, 8) = 0
+22:31:49.860772 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+22:31:49.860887 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+22:31:49.861040 rt_sigaction(SIGUSR1, {0x55818003a296, ~[RTMIN RT_1], SA_RESTORER, 0x7f7e3099d390}, NULL, 8) = 0
+22:31:49.861127 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+22:31:49.861285 brk(NULL)               = 0x558181feb000
+22:31:49.861346 brk(0x55818200c000)     = 0x55818200c000
+22:31:49.861413 write(1, "ready\n", 6)  = 6
+22:31:49.861589 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+22:31:49.861660 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+22:31:49.861956 getsockname(3, {sa_family=AF_NETLINK, pid=8220, groups=00000000}, [12]) = 0
+22:31:49.862036 sendto(3, "\24\0\0\0\26\0\1\3Ud\r[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+22:31:49.862121 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0Ud\r[\34 \0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 164
+22:31:49.862215 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0Ud\r[\34 \0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+22:31:49.862291 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0Ud\r[\34 \0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+22:31:49.862372 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+22:31:49.862439 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+22:31:49.862524 close(4)                = 0
+22:31:49.862588 close(3)                = 0
+22:31:49.862659 socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+22:31:49.862724 connect(3, {sa_family=AF_INET, sin_port=htons(50883), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+22:31:49.863091 write(1, "connected\n", 10) = 10
+22:31:49.863180 fcntl(3, F_GETFL)       = 0x2 (flags O_RDWR)
+22:31:49.863248 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+22:31:49.863323 read(0, "send 281\n", 1024) = 9
+22:31:49.945697 read(0, "47455420687474703a2f2f3132372e30"..., 1024) = 563
+22:31:49.995749 fstat(3, {st_mode=S_IFSOCK|0777, st_size=0, ...}) = 0
+22:31:49.995883 write(3, "GET http://127.0.0.1:33881/g3CQx"..., 281) = 281
+22:31:49.997401 read(0, strace: Process 8220 detached
+ <detached ...>
+22:33:32.309342 execve("./client", ["./client", "192.168.1.107", "50063"], [/* 75 vars */]) = 0
+22:33:32.310966 brk(NULL)               = 0x5611246ba000
+22:33:32.311250 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+22:33:32.311408 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+22:33:32.311498 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+22:33:32.311641 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+22:33:32.311720 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fae47586000
+22:33:32.311798 close(3)                = 0
+22:33:32.311872 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+22:33:32.311962 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+22:33:32.312037 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+22:33:32.312114 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+22:33:32.312186 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fae47585000
+22:33:32.312267 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fae4716d000
+22:33:32.312341 mprotect(0x7fae47185000, 2093056, PROT_NONE) = 0
+22:33:32.312420 mmap(0x7fae47384000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fae47384000
+22:33:32.312725 mmap(0x7fae47386000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fae47386000
+22:33:32.312818 close(3)                = 0
+22:33:32.312894 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+22:33:32.313009 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+22:33:32.313091 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+22:33:32.313165 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+22:33:32.313240 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fae46da3000
+22:33:32.313524 mprotect(0x7fae46f63000, 2097152, PROT_NONE) = 0
+22:33:32.313615 mmap(0x7fae47163000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7fae47163000
+22:33:32.313698 mmap(0x7fae47169000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fae47169000
+22:33:32.313780 close(3)                = 0
+22:33:32.313875 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fae47584000
+22:33:32.313952 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fae47583000
+22:33:32.314022 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fae47582000
+22:33:32.314092 arch_prctl(ARCH_SET_FS, 0x7fae47583700) = 0
+22:33:32.314263 mprotect(0x7fae47163000, 16384, PROT_READ) = 0
+22:33:32.314348 mprotect(0x7fae47384000, 4096, PROT_READ) = 0
+22:33:32.314481 mprotect(0x561122887000, 4096, PROT_READ) = 0
+22:33:32.314558 mprotect(0x7fae475af000, 4096, PROT_READ) = 0
+22:33:32.314628 munmap(0x7fae47586000, 167722) = 0
+22:33:32.314711 set_tid_address(0x7fae475839d0) = 8280
+22:33:32.314775 set_robust_list(0x7fae475839e0, 24) = 0
+22:33:32.314849 rt_sigaction(SIGRTMIN, {0x7fae47172b50, [], SA_RESTORER|SA_SIGINFO, 0x7fae4717e390}, NULL, 8) = 0
+22:33:32.314926 rt_sigaction(SIGRT_1, {0x7fae47172be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fae4717e390}, NULL, 8) = 0
+22:33:32.314997 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+22:33:32.315078 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+22:33:32.315196 rt_sigaction(SIGUSR1, {0x561122683296, ~[RTMIN RT_1], SA_RESTORER, 0x7fae4717e390}, NULL, 8) = 0
+22:33:32.315275 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+22:33:32.315434 brk(NULL)               = 0x5611246ba000
+22:33:32.315499 brk(0x5611246db000)     = 0x5611246db000
+22:33:32.315574 write(1, "ready\n", 6)  = 6
+22:33:32.315752 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+22:33:32.315831 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+22:33:32.316441 getsockname(3, {sa_family=AF_NETLINK, pid=8280, groups=00000000}, [12]) = 0
+22:33:32.316526 sendto(3, "\24\0\0\0\26\0\1\3\274d\r[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+22:33:32.316623 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0\274d\r[X \0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 164
+22:33:32.316749 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0\274d\r[X \0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+22:33:32.316837 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0\274d\r[X \0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+22:33:32.316919 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+22:33:32.317039 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+22:33:32.317137 close(4)                = 0
+22:33:32.317212 close(3)                = 0
+22:33:32.317293 socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+22:33:32.317366 connect(3, {sa_family=AF_INET, sin_port=htons(50063), sin_addr=inet_addr("192.168.1.107")}, 16) = 0
+22:33:32.322908 write(1, "connected\n", 10) = 10
+22:33:32.323023 fcntl(3, F_GETFL)       = 0x2 (flags O_RDWR)
+22:33:32.323096 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+22:33:32.323178 read(0, "send 171\n", 1024) = 9
+22:33:32.399161 read(0, "47455420687474703a2f2f3132372e30"..., 1024) = 343
+22:33:32.449340 fstat(3, {st_mode=S_IFSOCK|0777, st_size=0, ...}) = 0
+22:33:32.449443 write(3, "GET http://127.0.0.1:46005/ HTTP"..., 171) = 171
+22:33:32.449548 read(0, "readline\n", 1024) = 9
+22:33:32.958460 read(3, strace: Process 8280 detached
+ <detached ...>
+22:36:41.631919 execve("./client", ["./client", "192.168.1.107", "44143"], [/* 75 vars */]) = 0
+22:36:41.641153 brk(NULL)               = 0x5585690dd000
+22:36:41.645469 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+22:36:41.647389 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+22:36:41.649002 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+22:36:41.652236 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+22:36:41.656969 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f3cd770b000
+22:36:41.657348 close(3)                = 0
+22:36:41.661091 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+22:36:41.663634 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+22:36:41.664532 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+22:36:41.666788 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+22:36:41.669092 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3cd770a000
+22:36:41.669732 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3cd72f2000
+22:36:41.670015 mprotect(0x7f3cd730a000, 2093056, PROT_NONE) = 0
+22:36:41.670623 mmap(0x7f3cd7509000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f3cd7509000
+22:36:41.671930 mmap(0x7f3cd750b000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3cd750b000
+22:36:41.673349 close(3)                = 0
+22:36:41.673563 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+22:36:41.673672 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+22:36:41.673741 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+22:36:41.673804 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+22:36:41.673851 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3cd6f28000
+22:36:41.673905 mprotect(0x7f3cd70e8000, 2097152, PROT_NONE) = 0
+22:36:41.673941 mmap(0x7f3cd72e8000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f3cd72e8000
+22:36:41.673982 mmap(0x7f3cd72ee000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3cd72ee000
+22:36:41.674017 close(3)                = 0
+22:36:41.674057 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3cd7709000
+22:36:41.674089 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3cd7708000
+22:36:41.674119 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3cd7707000
+22:36:41.674171 arch_prctl(ARCH_SET_FS, 0x7f3cd7708700) = 0
+22:36:41.674263 mprotect(0x7f3cd72e8000, 16384, PROT_READ) = 0
+22:36:41.674301 mprotect(0x7f3cd7509000, 4096, PROT_READ) = 0
+22:36:41.674360 mprotect(0x5585683bd000, 4096, PROT_READ) = 0
+22:36:41.674389 mprotect(0x7f3cd7734000, 4096, PROT_READ) = 0
+22:36:41.674418 munmap(0x7f3cd770b000, 167722) = 0
+22:36:41.674455 set_tid_address(0x7f3cd77089d0) = 8415
+22:36:41.674479 set_robust_list(0x7f3cd77089e0, 24) = 0
+22:36:41.674511 rt_sigaction(SIGRTMIN, {0x7f3cd72f7b50, [], SA_RESTORER|SA_SIGINFO, 0x7f3cd7303390}, NULL, 8) = 0
+22:36:41.674544 rt_sigaction(SIGRT_1, {0x7f3cd72f7be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f3cd7303390}, NULL, 8) = 0
+22:36:41.674569 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+22:36:41.674601 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+22:36:41.674704 rt_sigaction(SIGUSR1, {0x5585681b9296, ~[RTMIN RT_1], SA_RESTORER, 0x7f3cd7303390}, NULL, 8) = 0
+22:36:41.674763 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+22:36:41.674905 brk(NULL)               = 0x5585690dd000
+22:36:41.674968 brk(0x5585690fe000)     = 0x5585690fe000
+22:36:41.675046 write(1, "ready\n", 6)  = 6
+22:36:41.675212 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+22:36:41.675335 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+22:36:41.675372 getsockname(3, {sa_family=AF_NETLINK, pid=8415, groups=00000000}, [12]) = 0
+22:36:41.675406 sendto(3, "\24\0\0\0\26\0\1\3ye\r[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+22:36:41.675449 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0ye\r[\337 \0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 164
+22:36:41.675496 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0ye\r[\337 \0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+22:36:41.675532 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0ye\r[\337 \0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+22:36:41.675570 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+22:36:41.675604 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+22:36:41.675644 close(4)                = 0
+22:36:41.675674 close(3)                = 0
+22:36:41.675706 socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+22:36:41.675735 connect(3, {sa_family=AF_INET, sin_port=htons(44143), sin_addr=inet_addr("192.168.1.107")}, 16) = 0
+22:36:41.680857 write(1, "connected\n", 10) = 10
+22:36:41.680893 fcntl(3, F_GETFL)       = 0x2 (flags O_RDWR)
+22:36:41.680932 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+22:36:41.680972 read(0, "send 80\n", 1024) = 8
+22:36:41.752407 read(0, "47455420687474703a2f2f3132372e30"..., 1024) = 161
+22:36:41.802498 fstat(3, {st_mode=S_IFSOCK|0777, st_size=0, ...}) = 0
+22:36:41.802563 write(3, "GET http://127.0.0.1:34349/ HTTP"..., 80) = 80
+22:36:41.802623 read(0, "readline\n", 1024) = 9
+22:36:42.158410 read(3, strace: Process 8415 detached
+ <detached ...>
+22:37:43.549793 execve("./client", ["./client", "192.168.1.107", "28005"], [/* 75 vars */]) = 0
+22:37:43.552870 brk(NULL)               = 0x55726a35f000
+22:37:43.552977 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+22:37:43.553033 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+22:37:43.553068 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+22:37:43.553102 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+22:37:43.553132 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fc6eb971000
+22:37:43.553163 close(3)                = 0
+22:37:43.553191 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+22:37:43.553226 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+22:37:43.553272 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+22:37:43.553302 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+22:37:43.553329 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc6eb970000
+22:37:43.553361 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc6eb558000
+22:37:43.553392 mprotect(0x7fc6eb570000, 2093056, PROT_NONE) = 0
+22:37:43.553425 mmap(0x7fc6eb76f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fc6eb76f000
+22:37:43.553463 mmap(0x7fc6eb771000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fc6eb771000
+22:37:43.553497 close(3)                = 0
+22:37:43.553529 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+22:37:43.553579 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+22:37:43.553609 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+22:37:43.553641 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+22:37:43.553669 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc6eb18e000
+22:37:43.553697 mprotect(0x7fc6eb34e000, 2097152, PROT_NONE) = 0
+22:37:43.553730 mmap(0x7fc6eb54e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7fc6eb54e000
+22:37:43.553763 mmap(0x7fc6eb554000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fc6eb554000
+22:37:43.553795 close(3)                = 0
+22:37:43.553832 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc6eb96f000
+22:37:43.553861 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc6eb96e000
+22:37:43.553888 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc6eb96d000
+22:37:43.553913 arch_prctl(ARCH_SET_FS, 0x7fc6eb96e700) = 0
+22:37:43.553989 mprotect(0x7fc6eb54e000, 16384, PROT_READ) = 0
+22:37:43.554026 mprotect(0x7fc6eb76f000, 4096, PROT_READ) = 0
+22:37:43.554087 mprotect(0x557269585000, 4096, PROT_READ) = 0
+22:37:43.554115 mprotect(0x7fc6eb99a000, 4096, PROT_READ) = 0
+22:37:43.554143 munmap(0x7fc6eb971000, 167722) = 0
+22:37:43.554175 set_tid_address(0x7fc6eb96e9d0) = 8473
+22:37:43.554198 set_robust_list(0x7fc6eb96e9e0, 24) = 0
+22:37:43.554224 rt_sigaction(SIGRTMIN, {0x7fc6eb55db50, [], SA_RESTORER|SA_SIGINFO, 0x7fc6eb569390}, NULL, 8) = 0
+22:37:43.554252 rt_sigaction(SIGRT_1, {0x7fc6eb55dbe0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fc6eb569390}, NULL, 8) = 0
+22:37:43.554277 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+22:37:43.554307 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+22:37:43.554360 rt_sigaction(SIGUSR1, {0x557269381296, ~[RTMIN RT_1], SA_RESTORER, 0x7fc6eb569390}, NULL, 8) = 0
+22:37:43.554394 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+22:37:43.554460 brk(NULL)               = 0x55726a35f000
+22:37:43.554483 brk(0x55726a380000)     = 0x55726a380000
+22:37:43.554521 write(1, "ready\n", 6)  = 6
+22:37:43.554573 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+22:37:43.554609 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+22:37:43.554639 getsockname(3, {sa_family=AF_NETLINK, pid=8473, groups=00000000}, [12]) = 0
+22:37:43.554674 sendto(3, "\24\0\0\0\26\0\1\3\267e\r[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+22:37:43.554715 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0\267e\r[\31!\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 164
+22:37:43.554759 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0\267e\r[\31!\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+22:37:43.554793 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0\267e\r[\31!\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+22:37:43.554835 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+22:37:43.554864 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+22:37:43.554903 close(4)                = 0
+22:37:43.554931 close(3)                = 0
+22:37:43.554962 socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+22:37:43.554991 connect(3, {sa_family=AF_INET, sin_port=htons(28005), sin_addr=inet_addr("192.168.1.107")}, 16) = 0
+22:37:43.555080 write(1, "connected\n", 10) = 10
+22:37:43.555115 fcntl(3, F_GETFL)       = 0x2 (flags O_RDWR)
+22:37:43.555142 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+22:37:43.555176 read(0, "send 117\n", 1024) = 9
+22:37:43.624041 read(0, "47455420687474703a2f2f3139322e31"..., 1024) = 235
+22:37:43.674449 fstat(3, {st_mode=S_IFSOCK|0777, st_size=0, ...}) = 0
+22:37:43.674619 write(3, "GET http://192.168.1.107:44363/ "..., 117) = 117
+22:37:43.674794 read(0, "readline\n", 1024) = 9
+22:37:44.030093 read(3, strace: Process 8473 detached
+ <detached ...>
+23:26:22.529534 execve("./client", ["./client", "127.0.0.1", "18381"], [/* 75 vars */]) = 0
+23:26:22.532240 brk(NULL)               = 0x55a0081b6000
+23:26:22.532304 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+23:26:22.532352 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+23:26:22.532396 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+23:26:22.532435 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+23:26:22.532474 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fe15194b000
+23:26:22.532507 close(3)                = 0
+23:26:22.532536 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+23:26:22.532573 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+23:26:22.532611 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+23:26:22.532643 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+23:26:22.532678 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe15194a000
+23:26:22.532713 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe151532000
+23:26:22.532746 mprotect(0x7fe15154a000, 2093056, PROT_NONE) = 0
+23:26:22.532782 mmap(0x7fe151749000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fe151749000
+23:26:22.532823 mmap(0x7fe15174b000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe15174b000
+23:26:22.532861 close(3)                = 0
+23:26:22.532895 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+23:26:22.532934 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+23:26:22.533005 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+23:26:22.533038 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+23:26:22.533070 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fe151168000
+23:26:22.533107 mprotect(0x7fe151328000, 2097152, PROT_NONE) = 0
+23:26:22.533151 mmap(0x7fe151528000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7fe151528000
+23:26:22.533193 mmap(0x7fe15152e000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fe15152e000
+23:26:22.533230 close(3)                = 0
+23:26:22.533316 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe151949000
+23:26:22.533374 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe151948000
+23:26:22.533407 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fe151947000
+23:26:22.533438 arch_prctl(ARCH_SET_FS, 0x7fe151948700) = 0
+23:26:22.533545 mprotect(0x7fe151528000, 16384, PROT_READ) = 0
+23:26:22.534132 mprotect(0x7fe151749000, 4096, PROT_READ) = 0
+23:26:22.534219 mprotect(0x55a007c30000, 4096, PROT_READ) = 0
+23:26:22.534255 mprotect(0x7fe151974000, 4096, PROT_READ) = 0
+23:26:22.534463 munmap(0x7fe15194b000, 167722) = 0
+23:26:22.534507 set_tid_address(0x7fe1519489d0) = 8884
+23:26:22.534536 set_robust_list(0x7fe1519489e0, 24) = 0
+23:26:22.534569 rt_sigaction(SIGRTMIN, {0x7fe151537b50, [], SA_RESTORER|SA_SIGINFO, 0x7fe151543390}, NULL, 8) = 0
+23:26:22.534609 rt_sigaction(SIGRT_1, {0x7fe151537be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fe151543390}, NULL, 8) = 0
+23:26:22.534641 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+23:26:22.534682 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+23:26:22.534760 rt_sigaction(SIGUSR1, {0x55a007a2c296, ~[RTMIN RT_1], SA_RESTORER, 0x7fe151543390}, NULL, 8) = 0
+23:26:22.534803 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+23:26:22.534882 brk(NULL)               = 0x55a0081b6000
+23:26:22.534912 brk(0x55a0081d7000)     = 0x55a0081d7000
+23:26:22.534945 write(1, "ready\n", 6)  = 6
+23:26:22.535051 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+23:26:22.535093 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+23:26:22.535126 getsockname(3, {sa_family=AF_NETLINK, pid=8884, groups=00000000}, [12]) = 0
+23:26:22.535162 sendto(3, "\24\0\0\0\26\0\1\3\36q\r[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+23:26:22.535450 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0\36q\r[\264\"\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 164
+23:26:22.535554 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0\36q\r[\264\"\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+23:26:22.535615 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0\36q\r[\264\"\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+23:26:22.535661 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+23:26:22.535694 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+23:26:22.535784 close(4)                = 0
+23:26:22.535833 close(3)                = 0
+23:26:22.535882 socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+23:26:22.535933 connect(3, {sa_family=AF_INET, sin_port=htons(18381), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+23:26:22.537089 write(1, "connected\n", 10) = 10
+23:26:22.537184 fcntl(3, F_GETFL)       = 0x2 (flags O_RDWR)
+23:26:22.537218 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+23:26:22.537263 read(0, "send 175\n", 1024) = 9
+23:26:22.611033 read(0, "47455420687474703a2f2f3139322e31"..., 1024) = 351
+23:26:22.661192 fstat(3, {st_mode=S_IFSOCK|0777, st_size=0, ...}) = 0
+23:26:22.661286 write(3, "GET http://192.168.1.107:45377/ "..., 175) = 175
+23:26:22.661354 read(0, "readline\n", 1024) = 9
+23:26:23.171442 read(3, strace: Process 8884 detached
+ <detached ...>
+23:33:16.768881 execve("./client", ["./client", "192.168.1.107", "56023"], [/* 75 vars */]) = 0
+23:33:16.770980 brk(NULL)               = 0x559c9dddf000
+23:33:16.771240 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+23:33:16.771419 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+23:33:16.771591 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+23:33:16.771631 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+23:33:16.771662 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7ed9caf000
+23:33:16.771691 close(3)                = 0
+23:33:16.771718 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+23:33:16.771751 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+23:33:16.771779 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+23:33:16.771819 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+23:33:16.771846 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7ed9cae000
+23:33:16.771877 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7ed9896000
+23:33:16.771923 mprotect(0x7f7ed98ae000, 2093056, PROT_NONE) = 0
+23:33:16.771955 mmap(0x7f7ed9aad000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f7ed9aad000
+23:33:16.771990 mmap(0x7f7ed9aaf000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7ed9aaf000
+23:33:16.772019 close(3)                = 0
+23:33:16.772045 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+23:33:16.772073 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+23:33:16.772101 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+23:33:16.772126 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+23:33:16.772152 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7ed94cc000
+23:33:16.772178 mprotect(0x7f7ed968c000, 2097152, PROT_NONE) = 0
+23:33:16.772206 mmap(0x7f7ed988c000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f7ed988c000
+23:33:16.772239 mmap(0x7f7ed9892000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7ed9892000
+23:33:16.772270 close(3)                = 0
+23:33:16.772304 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7ed9cad000
+23:33:16.772330 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7ed9cac000
+23:33:16.772354 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7ed9cab000
+23:33:16.772378 arch_prctl(ARCH_SET_FS, 0x7f7ed9cac700) = 0
+23:33:16.772444 mprotect(0x7f7ed988c000, 16384, PROT_READ) = 0
+23:33:16.772476 mprotect(0x7f7ed9aad000, 4096, PROT_READ) = 0
+23:33:16.772526 mprotect(0x559c9c18e000, 4096, PROT_READ) = 0
+23:33:16.772552 mprotect(0x7f7ed9cd8000, 4096, PROT_READ) = 0
+23:33:16.772578 munmap(0x7f7ed9caf000, 167722) = 0
+23:33:16.772609 set_tid_address(0x7f7ed9cac9d0) = 9071
+23:33:16.772631 set_robust_list(0x7f7ed9cac9e0, 24) = 0
+23:33:16.772658 rt_sigaction(SIGRTMIN, {0x7f7ed989bb50, [], SA_RESTORER|SA_SIGINFO, 0x7f7ed98a7390}, NULL, 8) = 0
+23:33:16.772684 rt_sigaction(SIGRT_1, {0x7f7ed989bbe0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f7ed98a7390}, NULL, 8) = 0
+23:33:16.772710 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+23:33:16.772740 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+23:33:16.772786 rt_sigaction(SIGUSR1, {0x559c9bf8a296, ~[RTMIN RT_1], SA_RESTORER, 0x7f7ed98a7390}, NULL, 8) = 0
+23:33:16.772817 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+23:33:16.772876 brk(NULL)               = 0x559c9dddf000
+23:33:16.772899 brk(0x559c9de00000)     = 0x559c9de00000
+23:33:16.772926 write(1, "ready\n", 6)  = 6
+23:33:16.773284 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+23:33:16.773392 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+23:33:16.773490 getsockname(3, {sa_family=AF_NETLINK, pid=9071, groups=00000000}, [12]) = 0
+23:33:16.773593 sendto(3, "\24\0\0\0\26\0\1\3\274r\r[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+23:33:16.773690 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0\274r\r[o#\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 164
+23:33:16.773736 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0\274r\r[o#\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+23:33:16.773770 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0\274r\r[o#\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+23:33:16.773802 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+23:33:16.773832 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+23:33:16.773872 close(4)                = 0
+23:33:16.773918 close(3)                = 0
+23:33:16.774031 socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+23:33:16.774067 connect(3, {sa_family=AF_INET, sin_port=htons(56023), sin_addr=inet_addr("192.168.1.107")}, 16) = 0
+23:33:16.774882 write(1, "connected\n", 10) = 10
+23:33:16.774971 fcntl(3, F_GETFL)       = 0x2 (flags O_RDWR)
+23:33:16.775001 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+23:33:16.775034 read(0, "send 103\n", 1024) = 9
+23:33:16.842359 read(0, "47455420687474703a2f2f3139322e31"..., 1024) = 207
+23:33:16.892760 fstat(3, {st_mode=S_IFSOCK|0777, st_size=0, ...}) = 0
+23:33:16.892828 write(3, "GET http://192.168.1.107:44403/ "..., 103) = 103
+23:33:16.892885 read(0, "readline\n", 1024) = 9
+23:33:17.248545 read(3, strace: Process 9071 detached
+ <detached ...>
+23:38:21.407123 execve("./client", ["./client", "192.168.1.107", "19963"], [/* 75 vars */]) = 0
+23:38:21.409081 brk(NULL)               = 0x560f3a74a000
+23:38:21.409177 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+23:38:21.409267 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+23:38:21.409318 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+23:38:21.409357 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+23:38:21.409387 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f3f70c45000
+23:38:21.409415 close(3)                = 0
+23:38:21.409444 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+23:38:21.409476 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+23:38:21.409505 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+23:38:21.409533 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+23:38:21.409560 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3f70c44000
+23:38:21.409595 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3f7082c000
+23:38:21.409623 mprotect(0x7f3f70844000, 2093056, PROT_NONE) = 0
+23:38:21.409651 mmap(0x7f3f70a43000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f3f70a43000
+23:38:21.409906 mmap(0x7f3f70a45000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3f70a45000
+23:38:21.409946 close(3)                = 0
+23:38:21.410031 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+23:38:21.410065 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+23:38:21.410098 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+23:38:21.410136 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+23:38:21.410174 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f3f70462000
+23:38:21.410203 mprotect(0x7f3f70622000, 2097152, PROT_NONE) = 0
+23:38:21.410313 mmap(0x7f3f70822000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f3f70822000
+23:38:21.411030 mmap(0x7f3f70828000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f3f70828000
+23:38:21.411775 close(3)                = 0
+23:38:21.411852 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3f70c43000
+23:38:21.412197 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3f70c42000
+23:38:21.413044 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f3f70c41000
+23:38:21.413401 arch_prctl(ARCH_SET_FS, 0x7f3f70c42700) = 0
+23:38:21.413782 mprotect(0x7f3f70822000, 16384, PROT_READ) = 0
+23:38:21.415202 mprotect(0x7f3f70a43000, 4096, PROT_READ) = 0
+23:38:21.415574 mprotect(0x560f387ce000, 4096, PROT_READ) = 0
+23:38:21.416062 mprotect(0x7f3f70c6e000, 4096, PROT_READ) = 0
+23:38:21.416233 munmap(0x7f3f70c45000, 167722) = 0
+23:38:21.416427 set_tid_address(0x7f3f70c429d0) = 9168
+23:38:21.416486 set_robust_list(0x7f3f70c429e0, 24) = 0
+23:38:21.416543 rt_sigaction(SIGRTMIN, {0x7f3f70831b50, [], SA_RESTORER|SA_SIGINFO, 0x7f3f7083d390}, NULL, 8) = 0
+23:38:21.416618 rt_sigaction(SIGRT_1, {0x7f3f70831be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f3f7083d390}, NULL, 8) = 0
+23:38:21.418746 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+23:38:21.418807 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+23:38:21.418859 rt_sigaction(SIGUSR1, {0x560f385ca296, ~[RTMIN RT_1], SA_RESTORER, 0x7f3f7083d390}, NULL, 8) = 0
+23:38:21.418892 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+23:38:21.419187 brk(NULL)               = 0x560f3a74a000
+23:38:21.419232 brk(0x560f3a76b000)     = 0x560f3a76b000
+23:38:21.419267 write(1, "ready\n", 6)  = 6
+23:38:21.420995 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+23:38:21.421095 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+23:38:21.421160 getsockname(3, {sa_family=AF_NETLINK, pid=9168, groups=00000000}, [12]) = 0
+23:38:21.421212 sendto(3, "\24\0\0\0\26\0\1\3\355s\r[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+23:38:21.421267 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0\355s\r[\320#\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 164
+23:38:21.421327 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0\355s\r[\320#\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+23:38:21.421376 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0\355s\r[\320#\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+23:38:21.421424 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+23:38:21.421468 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+23:38:21.421520 close(4)                = 0
+23:38:21.421568 close(3)                = 0
+23:38:21.421608 socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+23:38:21.421648 connect(3, {sa_family=AF_INET, sin_port=htons(19963), sin_addr=inet_addr("192.168.1.107")}, 16) = 0
+23:38:21.421735 write(1, "connected\n", 10) = 10
+23:38:21.421783 fcntl(3, F_GETFL)       = 0x2 (flags O_RDWR)
+23:38:21.421835 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+23:38:21.421888 read(0, "send 108\n", 1024) = 9
+23:38:21.492875 read(0, "47455420687474703a2f2f3139322e31"..., 1024) = 217
+23:38:21.543040 fstat(3, {st_mode=S_IFSOCK|0777, st_size=0, ...}) = 0
+23:38:21.543210 write(3, "GET http://192.168.1.107:39545/ "..., 108) = 108
+23:38:21.543354 read(0, strace: Process 9168 detached
+ <detached ...>
+23:39:02.133608 execve("./client", ["./client", "192.168.1.107", "55335"], [/* 75 vars */]) = 0
+23:39:02.134800 brk(NULL)               = 0x55787d90d000
+23:39:02.134971 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+23:39:02.135104 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+23:39:02.135198 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+23:39:02.135300 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+23:39:02.135382 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fb32218a000
+23:39:02.135468 close(3)                = 0
+23:39:02.135571 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+23:39:02.135685 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+23:39:02.135782 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+23:39:02.135867 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+23:39:02.135958 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb322189000
+23:39:02.136062 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb321d71000
+23:39:02.136163 mprotect(0x7fb321d89000, 2093056, PROT_NONE) = 0
+23:39:02.136293 mmap(0x7fb321f88000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fb321f88000
+23:39:02.136483 mmap(0x7fb321f8a000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb321f8a000
+23:39:02.136672 close(3)                = 0
+23:39:02.136797 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+23:39:02.136937 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+23:39:02.137163 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+23:39:02.137226 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+23:39:02.137313 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fb3219a7000
+23:39:02.137383 mprotect(0x7fb321b67000, 2097152, PROT_NONE) = 0
+23:39:02.137475 mmap(0x7fb321d67000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7fb321d67000
+23:39:02.137551 mmap(0x7fb321d6d000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fb321d6d000
+23:39:02.137624 close(3)                = 0
+23:39:02.137708 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb322188000
+23:39:02.137772 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb322187000
+23:39:02.137855 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fb322186000
+23:39:02.137913 arch_prctl(ARCH_SET_FS, 0x7fb322187700) = 0
+23:39:02.138060 mprotect(0x7fb321d67000, 16384, PROT_READ) = 0
+23:39:02.138138 mprotect(0x7fb321f88000, 4096, PROT_READ) = 0
+23:39:02.138257 mprotect(0x55787bcc9000, 4096, PROT_READ) = 0
+23:39:02.138319 mprotect(0x7fb3221b3000, 4096, PROT_READ) = 0
+23:39:02.138377 munmap(0x7fb32218a000, 167722) = 0
+23:39:02.138448 set_tid_address(0x7fb3221879d0) = 9218
+23:39:02.138497 set_robust_list(0x7fb3221879e0, 24) = 0
+23:39:02.138556 rt_sigaction(SIGRTMIN, {0x7fb321d76b50, [], SA_RESTORER|SA_SIGINFO, 0x7fb321d82390}, NULL, 8) = 0
+23:39:02.138617 rt_sigaction(SIGRT_1, {0x7fb321d76be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fb321d82390}, NULL, 8) = 0
+23:39:02.138675 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+23:39:02.138742 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+23:39:02.138851 rt_sigaction(SIGUSR1, {0x55787bac5296, ~[RTMIN RT_1], SA_RESTORER, 0x7fb321d82390}, NULL, 8) = 0
+23:39:02.138929 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+23:39:02.139078 brk(NULL)               = 0x55787d90d000
+23:39:02.139128 brk(0x55787d92e000)     = 0x55787d92e000
+23:39:02.139188 write(1, "ready\n", 6)  = 6
+23:39:02.139273 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+23:39:02.139339 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+23:39:02.139399 getsockname(3, {sa_family=AF_NETLINK, pid=9218, groups=00000000}, [12]) = 0
+23:39:02.139471 sendto(3, "\24\0\0\0\26\0\1\3\26t\r[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+23:39:02.139575 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0\26t\r[\2$\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 164
+23:39:02.139676 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0\26t\r[\2$\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+23:39:02.139766 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0\26t\r[\2$\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+23:39:02.139843 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+23:39:02.139913 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+23:39:02.139998 close(4)                = 0
+23:39:02.140074 close(3)                = 0
+23:39:02.140140 socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+23:39:02.140206 connect(3, {sa_family=AF_INET, sin_port=htons(55335), sin_addr=inet_addr("192.168.1.107")}, 16) = 0
+23:39:02.152323 write(1, "connected\n", 10) = 10
+23:39:02.152506 fcntl(3, F_GETFL)       = 0x2 (flags O_RDWR)
+23:39:02.152565 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+23:39:02.152657 read(0, "send 151\n", 1024) = 9
+23:39:02.221967 read(0, "47455420687474703a2f2f3132372e30"..., 1024) = 303
+23:39:02.272418 fstat(3, {st_mode=S_IFSOCK|0777, st_size=0, ...}) = 0
+23:39:02.272582 write(3, "GET http://127.0.0.1:43429/ HTTP"..., 151) = 151
+23:39:02.272743 read(0, "readline\n", 1024) = 9
+23:39:02.731612 read(3, strace: Process 9218 detached
+ <detached ...>
+23:57:20.982923 execve("./client", ["./client", "127.0.0.1", "6674"], [/* 75 vars */]) = 0
+23:57:20.985186 brk(NULL)               = 0x56001c6b7000
+23:57:20.985318 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+23:57:20.985419 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+23:57:20.985502 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+23:57:20.985583 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+23:57:20.985657 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7874fb8000
+23:57:20.985727 close(3)                = 0
+23:57:20.985791 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+23:57:20.985874 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+23:57:20.985947 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+23:57:20.986016 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+23:57:20.986081 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7874fb7000
+23:57:20.986158 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7874b9f000
+23:57:20.986230 mprotect(0x7f7874bb7000, 2093056, PROT_NONE) = 0
+23:57:20.986306 mmap(0x7f7874db6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f7874db6000
+23:57:20.986394 mmap(0x7f7874db8000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7874db8000
+23:57:20.986474 close(3)                = 0
+23:57:20.986545 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+23:57:20.986619 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+23:57:20.986692 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+23:57:20.986758 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+23:57:20.986824 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f78747d5000
+23:57:20.986893 mprotect(0x7f7874995000, 2097152, PROT_NONE) = 0
+23:57:20.986967 mmap(0x7f7874b95000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f7874b95000
+23:57:20.987048 mmap(0x7f7874b9b000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7874b9b000
+23:57:20.987208 close(3)                = 0
+23:57:20.987346 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7874fb6000
+23:57:20.987432 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7874fb5000
+23:57:20.987500 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7874fb4000
+23:57:20.987566 arch_prctl(ARCH_SET_FS, 0x7f7874fb5700) = 0
+23:57:20.987769 mprotect(0x7f7874b95000, 16384, PROT_READ) = 0
+23:57:20.987871 mprotect(0x7f7874db6000, 4096, PROT_READ) = 0
+23:57:20.988005 mprotect(0x56001b499000, 4096, PROT_READ) = 0
+23:57:20.988078 mprotect(0x7f7874fe1000, 4096, PROT_READ) = 0
+23:57:20.988215 munmap(0x7f7874fb8000, 167722) = 0
+23:57:20.988309 set_tid_address(0x7f7874fb59d0) = 9658
+23:57:20.988368 set_robust_list(0x7f7874fb59e0, 24) = 0
+23:57:20.988435 rt_sigaction(SIGRTMIN, {0x7f7874ba4b50, [], SA_RESTORER|SA_SIGINFO, 0x7f7874bb0390}, NULL, 8) = 0
+23:57:20.988507 rt_sigaction(SIGRT_1, {0x7f7874ba4be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f7874bb0390}, NULL, 8) = 0
+23:57:20.988573 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+23:57:20.988650 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+23:57:20.988766 rt_sigaction(SIGUSR1, {0x56001b295296, ~[RTMIN RT_1], SA_RESTORER, 0x7f7874bb0390}, NULL, 8) = 0
+23:57:20.988873 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+23:57:20.989063 brk(NULL)               = 0x56001c6b7000
+23:57:20.989128 brk(0x56001c6d8000)     = 0x56001c6d8000
+23:57:20.989195 write(1, "ready\n", 6)  = 6
+23:57:20.989332 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+23:57:20.989410 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+23:57:20.989481 getsockname(3, {sa_family=AF_NETLINK, pid=9658, groups=00000000}, [12]) = 0
+23:57:20.989555 sendto(3, "\24\0\0\0\26\0\1\3`x\r[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+23:57:20.989652 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0`x\r[\272%\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 164
+23:57:20.989760 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0`x\r[\272%\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+23:57:20.989892 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0`x\r[\272%\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+23:57:20.989972 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+23:57:20.990042 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+23:57:20.990132 close(4)                = 0
+23:57:20.990200 close(3)                = 0
+23:57:20.990283 socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+23:57:20.990357 connect(3, {sa_family=AF_INET, sin_port=htons(6674), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+23:57:20.990534 write(1, "connected\n", 10) = 10
+23:57:20.990614 fcntl(3, F_GETFL)       = 0x2 (flags O_RDWR)
+23:57:20.990680 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+23:57:20.990840 read(0, "send 128\n", 1024) = 9
+23:57:21.070092 read(0, "47455420687474703a2f2f3139322e31"..., 1024) = 257
+23:57:21.120127 fstat(3, {st_mode=S_IFSOCK|0777, st_size=0, ...}) = 0
+23:57:21.120239 write(3, "GET http://192.168.1.107:37187/ "..., 128) = 128
+23:57:21.120383 read(0, "readline\n", 1024) = 9
+23:57:21.578561 read(3, strace: Process 9658 detached
+ <detached ...>
+00:11:07.412958 execve("./client", ["./client", "192.168.43.14", "21085"], [/* 75 vars */]) = 0
+00:11:07.413448 brk(NULL)               = 0x558931b0d000
+00:11:07.413655 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:11:07.413783 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+00:11:07.413816 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+00:11:07.413846 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+00:11:07.413870 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f52c12c7000
+00:11:07.413892 close(3)                = 0
+00:11:07.413914 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:11:07.413941 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+00:11:07.413966 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+00:11:07.413989 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+00:11:07.414011 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f52c12c6000
+00:11:07.414037 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f52c0eae000
+00:11:07.414059 mprotect(0x7f52c0ec6000, 2093056, PROT_NONE) = 0
+00:11:07.414083 mmap(0x7f52c10c5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f52c10c5000
+00:11:07.414109 mmap(0x7f52c10c7000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f52c10c7000
+00:11:07.414134 close(3)                = 0
+00:11:07.414156 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:11:07.414178 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+00:11:07.414201 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+00:11:07.414230 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+00:11:07.414253 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f52c0ae4000
+00:11:07.414275 mprotect(0x7f52c0ca4000, 2097152, PROT_NONE) = 0
+00:11:07.414298 mmap(0x7f52c0ea4000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f52c0ea4000
+00:11:07.414321 mmap(0x7f52c0eaa000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f52c0eaa000
+00:11:07.414344 close(3)                = 0
+00:11:07.414372 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f52c12c5000
+00:11:07.414394 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f52c12c4000
+00:11:07.414414 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f52c12c3000
+00:11:07.414434 arch_prctl(ARCH_SET_FS, 0x7f52c12c4700) = 0
+00:11:07.414490 mprotect(0x7f52c0ea4000, 16384, PROT_READ) = 0
+00:11:07.414515 mprotect(0x7f52c10c5000, 4096, PROT_READ) = 0
+00:11:07.414556 mprotect(0x558930a48000, 4096, PROT_READ) = 0
+00:11:07.414580 mprotect(0x7f52c12f0000, 4096, PROT_READ) = 0
+00:11:07.414601 munmap(0x7f52c12c7000, 167722) = 0
+00:11:07.414625 set_tid_address(0x7f52c12c49d0) = 10103
+00:11:07.414644 set_robust_list(0x7f52c12c49e0, 24) = 0
+00:11:07.414666 rt_sigaction(SIGRTMIN, {0x7f52c0eb3b50, [], SA_RESTORER|SA_SIGINFO, 0x7f52c0ebf390}, NULL, 8) = 0
+00:11:07.414687 rt_sigaction(SIGRT_1, {0x7f52c0eb3be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f52c0ebf390}, NULL, 8) = 0
+00:11:07.414709 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+00:11:07.414733 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+00:11:07.414768 rt_sigaction(SIGUSR1, {0x558930844296, ~[RTMIN RT_1], SA_RESTORER, 0x7f52c0ebf390}, NULL, 8) = 0
+00:11:07.414792 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+00:11:07.414840 brk(NULL)               = 0x558931b0d000
+00:11:07.414858 brk(0x558931b2e000)     = 0x558931b2e000
+00:11:07.414880 write(1, "ready\n", 6)  = 6
+00:11:07.414913 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+00:11:07.414941 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+00:11:07.414964 getsockname(3, {sa_family=AF_NETLINK, pid=10103, groups=00000000}, [12]) = 0
+00:11:07.414988 sendto(3, "\24\0\0\0\26\0\1\3\233{\r[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+00:11:07.415019 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0\233{\r[w'\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 164
+00:11:07.415050 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0\233{\r[w'\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+00:11:07.415075 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0\233{\r[w'\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+00:11:07.415099 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+00:11:07.415121 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+00:11:07.415149 close(4)                = 0
+00:11:07.415170 close(3)                = 0
+00:11:07.415194 socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+00:11:07.415215 connect(3, {sa_family=AF_INET, sin_port=htons(21085), sin_addr=inet_addr("192.168.43.14")}, 16) = 0
+00:11:07.415290 write(1, "connected\n", 10) = 10
+00:11:07.415325 fcntl(3, F_GETFL)       = 0x2 (flags O_RDWR)
+00:11:07.415354 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+00:11:07.415389 read(0, "send 158\n", 1024) = 9
+00:11:07.477114 read(0, "47455420687474703a2f2f3139322e31"..., 1024) = 317
+00:11:07.527199 fstat(3, {st_mode=S_IFSOCK|0777, st_size=0, ...}) = 0
+00:11:07.527283 write(3, "GET http://192.168.43.14:36515/ "..., 158) = 158
+00:11:07.527380 read(0, "readline\n", 1024) = 9
+00:11:07.986736 read(3, strace: Process 10103 detached
+ <detached ...>
+00:11:48.256393 execve("./client", ["./client", "127.0.0.1", "6359"], [/* 75 vars */]) = 0
+00:11:48.257358 brk(NULL)               = 0x561e6a6a4000
+00:11:48.257528 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:11:48.257697 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+00:11:48.257938 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+00:11:48.258142 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+00:11:48.258290 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fa956834000
+00:11:48.258411 close(3)                = 0
+00:11:48.258524 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:11:48.258654 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+00:11:48.258779 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+00:11:48.258892 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+00:11:48.259009 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa956833000
+00:11:48.259134 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa95641b000
+00:11:48.259235 mprotect(0x7fa956433000, 2093056, PROT_NONE) = 0
+00:11:48.259315 mmap(0x7fa956632000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fa956632000
+00:11:48.259412 mmap(0x7fa956634000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa956634000
+00:11:48.259500 close(3)                = 0
+00:11:48.259578 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:11:48.259665 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+00:11:48.259746 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+00:11:48.259821 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+00:11:48.259899 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fa956051000
+00:11:48.259976 mprotect(0x7fa956211000, 2097152, PROT_NONE) = 0
+00:11:48.260056 mmap(0x7fa956411000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7fa956411000
+00:11:48.260143 mmap(0x7fa956417000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fa956417000
+00:11:48.260227 close(3)                = 0
+00:11:48.260323 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa956832000
+00:11:48.260402 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa956831000
+00:11:48.260476 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fa956830000
+00:11:48.260548 arch_prctl(ARCH_SET_FS, 0x7fa956831700) = 0
+00:11:48.260716 mprotect(0x7fa956411000, 16384, PROT_READ) = 0
+00:11:48.260805 mprotect(0x7fa956632000, 4096, PROT_READ) = 0
+00:11:48.260936 mprotect(0x561e69e58000, 4096, PROT_READ) = 0
+00:11:48.261049 mprotect(0x7fa95685d000, 4096, PROT_READ) = 0
+00:11:48.261127 munmap(0x7fa956834000, 167722) = 0
+00:11:48.261218 set_tid_address(0x7fa9568319d0) = 10148
+00:11:48.261284 set_robust_list(0x7fa9568319e0, 24) = 0
+00:11:48.261360 rt_sigaction(SIGRTMIN, {0x7fa956420b50, [], SA_RESTORER|SA_SIGINFO, 0x7fa95642c390}, NULL, 8) = 0
+00:11:48.261437 rt_sigaction(SIGRT_1, {0x7fa956420be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fa95642c390}, NULL, 8) = 0
+00:11:48.261510 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+00:11:48.261593 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+00:11:48.261717 rt_sigaction(SIGUSR1, {0x561e69c54296, ~[RTMIN RT_1], SA_RESTORER, 0x7fa95642c390}, NULL, 8) = 0
+00:11:48.261803 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+00:11:48.261913 brk(NULL)               = 0x561e6a6a4000
+00:11:48.261934 brk(0x561e6a6c5000)     = 0x561e6a6c5000
+00:11:48.261958 write(1, "ready\n", 6)  = 6
+00:11:48.261995 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+00:11:48.262022 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+00:11:48.262054 getsockname(3, {sa_family=AF_NETLINK, pid=10148, groups=00000000}, [12]) = 0
+00:11:48.262083 sendto(3, "\24\0\0\0\26\0\1\3\304{\r[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+00:11:48.262116 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0\304{\r[\244'\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 164
+00:11:48.262150 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0\304{\r[\244'\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+00:11:48.262178 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0\304{\r[\244'\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+00:11:48.262207 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+00:11:48.262231 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+00:11:48.262262 close(4)                = 0
+00:11:48.262284 close(3)                = 0
+00:11:48.262307 socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+00:11:48.262331 connect(3, {sa_family=AF_INET, sin_port=htons(6359), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+00:11:48.262397 write(1, "connected\n", 10) = 10
+00:11:48.262469 fcntl(3, F_GETFL)       = 0x2 (flags O_RDWR)
+00:11:48.262520 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+00:11:48.262558 read(0, "send 280\n", 1024) = 9
+00:11:48.322417 read(0, "47455420687474703a2f2f3139322e31"..., 1024) = 561
+00:11:48.372758 fstat(3, {st_mode=S_IFSOCK|0777, st_size=0, ...}) = 0
+00:11:48.373019 write(3, "GET http://192.168.43.14:44447/p"..., 280) = 280
+00:11:48.373273 read(0, "readline\n", 1024) = 9
+00:11:48.884744 read(3, strace: Process 10148 detached
+ <detached ...>
+00:13:02.886811 execve("./client", ["./client", "127.0.0.1", "8740"], [/* 75 vars */]) = 0
+00:13:02.887627 brk(NULL)               = 0x562b49567000
+00:13:02.887765 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:13:02.887854 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+00:13:02.887929 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+00:13:02.888008 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+00:13:02.888084 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fcf98d5e000
+00:13:02.888155 close(3)                = 0
+00:13:02.888225 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:13:02.888303 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+00:13:02.888382 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+00:13:02.888459 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+00:13:02.888533 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcf98d5d000
+00:13:02.888621 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fcf98945000
+00:13:02.888698 mprotect(0x7fcf9895d000, 2093056, PROT_NONE) = 0
+00:13:02.888776 mmap(0x7fcf98b5c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fcf98b5c000
+00:13:02.888863 mmap(0x7fcf98b5e000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fcf98b5e000
+00:13:02.888968 close(3)                = 0
+00:13:02.889049 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:13:02.889131 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+00:13:02.889207 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+00:13:02.889278 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+00:13:02.889351 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fcf9857b000
+00:13:02.889424 mprotect(0x7fcf9873b000, 2097152, PROT_NONE) = 0
+00:13:02.889500 mmap(0x7fcf9893b000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7fcf9893b000
+00:13:02.889597 mmap(0x7fcf98941000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fcf98941000
+00:13:02.889676 close(3)                = 0
+00:13:02.889765 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcf98d5c000
+00:13:02.889856 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcf98d5b000
+00:13:02.889928 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fcf98d5a000
+00:13:02.889995 arch_prctl(ARCH_SET_FS, 0x7fcf98d5b700) = 0
+00:13:02.890151 mprotect(0x7fcf9893b000, 16384, PROT_READ) = 0
+00:13:02.890246 mprotect(0x7fcf98b5c000, 4096, PROT_READ) = 0
+00:13:02.890374 mprotect(0x562b48fff000, 4096, PROT_READ) = 0
+00:13:02.890560 mprotect(0x7fcf98d87000, 4096, PROT_READ) = 0
+00:13:02.890636 munmap(0x7fcf98d5e000, 167722) = 0
+00:13:02.890717 set_tid_address(0x7fcf98d5b9d0) = 10197
+00:13:02.890788 set_robust_list(0x7fcf98d5b9e0, 24) = 0
+00:13:02.890861 rt_sigaction(SIGRTMIN, {0x7fcf9894ab50, [], SA_RESTORER|SA_SIGINFO, 0x7fcf98956390}, NULL, 8) = 0
+00:13:02.890935 rt_sigaction(SIGRT_1, {0x7fcf9894abe0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fcf98956390}, NULL, 8) = 0
+00:13:02.891006 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+00:13:02.891086 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+00:13:02.891205 rt_sigaction(SIGUSR1, {0x562b48dfb296, ~[RTMIN RT_1], SA_RESTORER, 0x7fcf98956390}, NULL, 8) = 0
+00:13:02.891289 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+00:13:02.891448 brk(NULL)               = 0x562b49567000
+00:13:02.891510 brk(0x562b49588000)     = 0x562b49588000
+00:13:02.891584 write(1, "ready\n", 6)  = 6
+00:13:02.891694 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+00:13:02.891768 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+00:13:02.891842 getsockname(3, {sa_family=AF_NETLINK, pid=10197, groups=00000000}, [12]) = 0
+00:13:02.891924 sendto(3, "\24\0\0\0\26\0\1\3\16|\r[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+00:13:02.892213 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0\16|\r[\325'\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 164
+00:13:02.892326 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0\16|\r[\325'\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+00:13:02.892410 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0\16|\r[\325'\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+00:13:02.892489 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+00:13:02.892559 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+00:13:02.892648 close(4)                = 0
+00:13:02.892717 close(3)                = 0
+00:13:02.892800 socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+00:13:02.892875 connect(3, {sa_family=AF_INET, sin_port=htons(8740), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+00:13:02.893093 write(1, "connected\n", 10) = 10
+00:13:02.893198 fcntl(3, F_GETFL)       = 0x2 (flags O_RDWR)
+00:13:02.893271 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+00:13:02.893352 read(0, "send 129\n", 1024) = 9
+00:13:02.958244 read(0, "47455420687474703a2f2f3139322e31"..., 1024) = 259
+00:13:03.008343 fstat(3, {st_mode=S_IFSOCK|0777, st_size=0, ...}) = 0
+00:13:03.008591 write(3, "GET http://192.168.43.14:44347/ "..., 129) = 129
+00:13:03.008785 read(0, "readline\n", 1024) = 9
+00:13:03.424672 read(3, strace: Process 10197 detached
+ <detached ...>
+00:15:41.286738 execve("./client", ["./client", "127.0.0.1", "63670"], [/* 75 vars */]) = 0
+00:15:41.288273 brk(NULL)               = 0x556f681a5000
+00:15:41.289173 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:15:41.289463 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+00:15:41.289860 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+00:15:41.290915 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+00:15:41.292077 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f34d990b000
+00:15:41.293261 close(3)                = 0
+00:15:41.293341 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:15:41.293423 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+00:15:41.293496 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+00:15:41.293571 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+00:15:41.293647 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f34d990a000
+00:15:41.293722 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f34d94f2000
+00:15:41.293795 mprotect(0x7f34d950a000, 2093056, PROT_NONE) = 0
+00:15:41.293837 mmap(0x7f34d9709000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f34d9709000
+00:15:41.293878 mmap(0x7f34d970b000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f34d970b000
+00:15:41.293918 close(3)                = 0
+00:15:41.293955 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:15:41.293996 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+00:15:41.294037 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+00:15:41.294075 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+00:15:41.294113 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f34d9128000
+00:15:41.294163 mprotect(0x7f34d92e8000, 2097152, PROT_NONE) = 0
+00:15:41.294203 mmap(0x7f34d94e8000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f34d94e8000
+00:15:41.294244 mmap(0x7f34d94ee000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f34d94ee000
+00:15:41.294290 close(3)                = 0
+00:15:41.294334 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f34d9909000
+00:15:41.294374 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f34d9908000
+00:15:41.294403 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f34d9907000
+00:15:41.294473 arch_prctl(ARCH_SET_FS, 0x7f34d9908700) = 0
+00:15:41.294623 mprotect(0x7f34d94e8000, 16384, PROT_READ) = 0
+00:15:41.294670 mprotect(0x7f34d9709000, 4096, PROT_READ) = 0
+00:15:41.294716 mprotect(0x556f67528000, 4096, PROT_READ) = 0
+00:15:41.294784 mprotect(0x7f34d9934000, 4096, PROT_READ) = 0
+00:15:41.295172 munmap(0x7f34d990b000, 167722) = 0
+00:15:41.295219 set_tid_address(0x7f34d99089d0) = 10256
+00:15:41.295253 set_robust_list(0x7f34d99089e0, 24) = 0
+00:15:41.295289 rt_sigaction(SIGRTMIN, {0x7f34d94f7b50, [], SA_RESTORER|SA_SIGINFO, 0x7f34d9503390}, NULL, 8) = 0
+00:15:41.295328 rt_sigaction(SIGRT_1, {0x7f34d94f7be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f34d9503390}, NULL, 8) = 0
+00:15:41.295477 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+00:15:41.295520 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+00:15:41.295566 rt_sigaction(SIGUSR1, {0x556f67324296, ~[RTMIN RT_1], SA_RESTORER, 0x7f34d9503390}, NULL, 8) = 0
+00:15:41.295681 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+00:15:41.295736 brk(NULL)               = 0x556f681a5000
+00:15:41.295761 brk(0x556f681c6000)     = 0x556f681c6000
+00:15:41.295786 write(1, "ready\n", 6)  = 6
+00:15:41.295823 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+00:15:41.295884 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+00:15:41.295971 getsockname(3, {sa_family=AF_NETLINK, pid=10256, groups=00000000}, [12]) = 0
+00:15:41.296282 sendto(3, "\24\0\0\0\26\0\1\3\255|\r[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+00:15:41.296321 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0\255|\r[\20(\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 164
+00:15:41.296365 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0\255|\r[\20(\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+00:15:41.296613 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0\255|\r[\20(\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+00:15:41.296649 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+00:15:41.296674 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+00:15:41.296707 close(4)                = 0
+00:15:41.296732 close(3)                = 0
+00:15:41.296759 socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+00:15:41.296785 connect(3, {sa_family=AF_INET, sin_port=htons(63670), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+00:15:41.296965 write(1, "connected\n", 10) = 10
+00:15:41.296997 fcntl(3, F_GETFL)       = 0x2 (flags O_RDWR)
+00:15:41.297075 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+00:15:41.298110 read(0, "send 169\n", 1024) = 9
+00:15:41.357476 read(0, "47455420687474703a2f2f3139322e31"..., 1024) = 339
+00:15:41.407746 fstat(3, {st_mode=S_IFSOCK|0777, st_size=0, ...}) = 0
+00:15:41.407883 write(3, "GET http://192.168.43.14:38701/ "..., 169) = 169
+00:15:41.408010 read(0, "readline\n", 1024) = 9
+00:15:41.919034 read(3, strace: Process 10256 detached
+ <detached ...>
+00:30:27.605108 execve("./client", ["./client", "127.0.0.1", "22631"], [/* 75 vars */]) = 0
+00:30:27.608219 brk(NULL)               = 0x55b642213000
+00:30:27.610643 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:30:27.611837 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+00:30:27.613160 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+00:30:27.614374 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+00:30:27.616245 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f55bc7fc000
+00:30:27.618134 close(3)                = 0
+00:30:27.619230 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:30:27.620599 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+00:30:27.622000 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+00:30:27.622676 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+00:30:27.623996 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f55bc7fb000
+00:30:27.624646 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f55bc3e3000
+00:30:27.625173 mprotect(0x7f55bc3fb000, 2093056, PROT_NONE) = 0
+00:30:27.626094 mmap(0x7f55bc5fa000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f55bc5fa000
+00:30:27.626518 mmap(0x7f55bc5fc000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f55bc5fc000
+00:30:27.626956 close(3)                = 0
+00:30:27.627292 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:30:27.627675 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+00:30:27.628104 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+00:30:27.628343 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+00:30:27.629325 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f55bc019000
+00:30:27.629443 mprotect(0x7f55bc1d9000, 2097152, PROT_NONE) = 0
+00:30:27.629807 mmap(0x7f55bc3d9000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f55bc3d9000
+00:30:27.629897 mmap(0x7f55bc3df000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f55bc3df000
+00:30:27.629969 close(3)                = 0
+00:30:27.630198 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f55bc7fa000
+00:30:27.630379 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f55bc7f9000
+00:30:27.630450 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f55bc7f8000
+00:30:27.630519 arch_prctl(ARCH_SET_FS, 0x7f55bc7f9700) = 0
+00:30:27.630644 mprotect(0x7f55bc3d9000, 16384, PROT_READ) = 0
+00:30:27.630811 mprotect(0x7f55bc5fa000, 4096, PROT_READ) = 0
+00:30:27.630936 mprotect(0x55b640830000, 4096, PROT_READ) = 0
+00:30:27.631198 mprotect(0x7f55bc825000, 4096, PROT_READ) = 0
+00:30:27.631282 munmap(0x7f55bc7fc000, 167722) = 0
+00:30:27.631358 set_tid_address(0x7f55bc7f99d0) = 10545
+00:30:27.631447 set_robust_list(0x7f55bc7f99e0, 24) = 0
+00:30:27.631523 rt_sigaction(SIGRTMIN, {0x7f55bc3e8b50, [], SA_RESTORER|SA_SIGINFO, 0x7f55bc3f4390}, NULL, 8) = 0
+00:30:27.631629 rt_sigaction(SIGRT_1, {0x7f55bc3e8be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f55bc3f4390}, NULL, 8) = 0
+00:30:27.631706 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+00:30:27.631808 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+00:30:27.631906 rt_sigaction(SIGUSR1, {0x55b64062c296, ~[RTMIN RT_1], SA_RESTORER, 0x7f55bc3f4390}, NULL, 8) = 0
+00:30:27.632444 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+00:30:27.632570 brk(NULL)               = 0x55b642213000
+00:30:27.632730 brk(0x55b642234000)     = 0x55b642234000
+00:30:27.632795 write(1, "ready\n", 6)  = 6
+00:30:27.632871 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+00:30:27.632928 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+00:30:27.632999 getsockname(3, {sa_family=AF_NETLINK, pid=10545, groups=00000000}, [12]) = 0
+00:30:27.633061 sendto(3, "\24\0\0\0\26\0\1\3#\200\r[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+00:30:27.633131 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0#\200\r[1)\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 164
+00:30:27.633206 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0#\200\r[1)\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+00:30:27.633264 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0#\200\r[1)\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+00:30:27.633321 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+00:30:27.633398 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+00:30:27.633490 close(4)                = 0
+00:30:27.633549 close(3)                = 0
+00:30:27.633603 socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+00:30:27.633654 connect(3, {sa_family=AF_INET, sin_port=htons(22631), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+00:30:27.633768 write(1, "connected\n", 10) = 10
+00:30:27.633848 fcntl(3, F_GETFL)       = 0x2 (flags O_RDWR)
+00:30:27.633926 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+00:30:27.634008 read(0, "send 162\n", 1024) = 9
+00:30:27.700839 read(0, "47455420687474703a2f2f3132372e30"..., 1024) = 325
+00:30:27.750284 fstat(3, {st_mode=S_IFSOCK|0777, st_size=0, ...}) = 0
+00:30:27.750606 write(3, "GET http://127.0.0.1:39459/ HTTP"..., 162) = 162
+00:30:27.750914 read(0, strace: Process 10545 detached
+ <detached ...>
+00:31:16.221305 execve("./client", ["./client", "192.168.43.14", "33044"], [/* 75 vars */]) = 0
+00:31:16.222680 brk(NULL)               = 0x55b8d054f000
+00:31:16.222723 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:31:16.222760 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+00:31:16.222787 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+00:31:16.222815 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+00:31:16.222840 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1cfdda9000
+00:31:16.222867 close(3)                = 0
+00:31:16.222890 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:31:16.222928 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+00:31:16.222968 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+00:31:16.222991 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+00:31:16.223013 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1cfdda8000
+00:31:16.223037 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1cfd990000
+00:31:16.223062 mprotect(0x7f1cfd9a8000, 2093056, PROT_NONE) = 0
+00:31:16.223086 mmap(0x7f1cfdba7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f1cfdba7000
+00:31:16.223113 mmap(0x7f1cfdba9000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f1cfdba9000
+00:31:16.223138 close(3)                = 0
+00:31:16.223161 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:31:16.223188 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+00:31:16.223215 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+00:31:16.223237 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+00:31:16.223259 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1cfd5c6000
+00:31:16.223281 mprotect(0x7f1cfd786000, 2097152, PROT_NONE) = 0
+00:31:16.223306 mmap(0x7f1cfd986000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f1cfd986000
+00:31:16.223331 mmap(0x7f1cfd98c000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f1cfd98c000
+00:31:16.223360 close(3)                = 0
+00:31:16.223393 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1cfdda7000
+00:31:16.223419 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1cfdda6000
+00:31:16.223440 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1cfdda5000
+00:31:16.223461 arch_prctl(ARCH_SET_FS, 0x7f1cfdda6700) = 0
+00:31:16.223564 mprotect(0x7f1cfd986000, 16384, PROT_READ) = 0
+00:31:16.223620 mprotect(0x7f1cfdba7000, 4096, PROT_READ) = 0
+00:31:16.223661 mprotect(0x55b8cf81e000, 4096, PROT_READ) = 0
+00:31:16.223685 mprotect(0x7f1cfddd2000, 4096, PROT_READ) = 0
+00:31:16.223708 munmap(0x7f1cfdda9000, 167722) = 0
+00:31:16.223734 set_tid_address(0x7f1cfdda69d0) = 10603
+00:31:16.223753 set_robust_list(0x7f1cfdda69e0, 24) = 0
+00:31:16.223773 rt_sigaction(SIGRTMIN, {0x7f1cfd995b50, [], SA_RESTORER|SA_SIGINFO, 0x7f1cfd9a1390}, NULL, 8) = 0
+00:31:16.223817 rt_sigaction(SIGRT_1, {0x7f1cfd995be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f1cfd9a1390}, NULL, 8) = 0
+00:31:16.223840 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+00:31:16.223864 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+00:31:16.223917 rt_sigaction(SIGUSR1, {0x55b8cf61a296, ~[RTMIN RT_1], SA_RESTORER, 0x7f1cfd9a1390}, NULL, 8) = 0
+00:31:16.223947 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+00:31:16.224009 brk(NULL)               = 0x55b8d054f000
+00:31:16.224030 brk(0x55b8d0570000)     = 0x55b8d0570000
+00:31:16.224052 write(1, "ready\n", 6)  = 6
+00:31:16.224123 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+00:31:16.224167 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+00:31:16.224192 getsockname(3, {sa_family=AF_NETLINK, pid=10603, groups=00000000}, [12]) = 0
+00:31:16.224233 sendto(3, "\24\0\0\0\26\0\1\3T\200\r[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+00:31:16.224266 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0T\200\r[k)\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 164
+00:31:16.224302 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0T\200\r[k)\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+00:31:16.224336 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0T\200\r[k)\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+00:31:16.224377 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+00:31:16.224401 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+00:31:16.224434 close(4)                = 0
+00:31:16.224458 close(3)                = 0
+00:31:16.224494 socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+00:31:16.224520 connect(3, {sa_family=AF_INET, sin_port=htons(33044), sin_addr=inet_addr("192.168.43.14")}, 16) = 0
+00:31:16.228204 write(1, "connected\n", 10) = 10
+00:31:16.228288 fcntl(3, F_GETFL)       = 0x2 (flags O_RDWR)
+00:31:16.228327 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+00:31:16.228353 read(0, "send 116\n", 1024) = 9
+00:31:16.287508 read(0, "47455420687474703a2f2f3139322e31"..., 1024) = 233
+00:31:16.337618 fstat(3, {st_mode=S_IFSOCK|0777, st_size=0, ...}) = 0
+00:31:16.337694 write(3, "GET http://192.168.43.14:44621/ "..., 116) = 116
+00:31:16.338122 read(0, "readline\n", 1024) = 9
+00:31:16.741904 read(3, strace: Process 10603 detached
+ <detached ...>
+00:33:47.848255 execve("./client", ["./client", "127.0.0.1", "36629"], [/* 75 vars */]) = 0
+00:33:47.849386 brk(NULL)               = 0x561e9bdb3000
+00:33:47.849453 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:33:47.849593 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+00:33:47.849624 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+00:33:47.849707 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+00:33:47.849739 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f2ff6e16000
+00:33:47.849880 close(3)                = 0
+00:33:47.849910 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:33:47.849982 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+00:33:47.850021 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+00:33:47.850045 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+00:33:47.850068 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2ff6e15000
+00:33:47.850230 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2ff69fd000
+00:33:47.850256 mprotect(0x7f2ff6a15000, 2093056, PROT_NONE) = 0
+00:33:47.850284 mmap(0x7f2ff6c14000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f2ff6c14000
+00:33:47.850313 mmap(0x7f2ff6c16000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2ff6c16000
+00:33:47.850340 close(3)                = 0
+00:33:47.850368 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:33:47.850509 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+00:33:47.850537 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+00:33:47.850560 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+00:33:47.850583 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f2ff6633000
+00:33:47.850700 mprotect(0x7f2ff67f3000, 2097152, PROT_NONE) = 0
+00:33:47.850726 mmap(0x7f2ff69f3000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f2ff69f3000
+00:33:47.850751 mmap(0x7f2ff69f9000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f2ff69f9000
+00:33:47.850777 close(3)                = 0
+00:33:47.850897 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2ff6e14000
+00:33:47.850923 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2ff6e13000
+00:33:47.850943 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2ff6e12000
+00:33:47.850964 arch_prctl(ARCH_SET_FS, 0x7f2ff6e13700) = 0
+00:33:47.851153 mprotect(0x7f2ff69f3000, 16384, PROT_READ) = 0
+00:33:47.851184 mprotect(0x7f2ff6c14000, 4096, PROT_READ) = 0
+00:33:47.851231 mprotect(0x561e9af9c000, 4096, PROT_READ) = 0
+00:33:47.851257 mprotect(0x7f2ff6e3f000, 4096, PROT_READ) = 0
+00:33:47.851280 munmap(0x7f2ff6e16000, 167722) = 0
+00:33:47.851304 set_tid_address(0x7f2ff6e139d0) = 10771
+00:33:47.851323 set_robust_list(0x7f2ff6e139e0, 24) = 0
+00:33:47.851342 rt_sigaction(SIGRTMIN, {0x7f2ff6a02b50, [], SA_RESTORER|SA_SIGINFO, 0x7f2ff6a0e390}, NULL, 8) = 0
+00:33:47.851365 rt_sigaction(SIGRT_1, {0x7f2ff6a02be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f2ff6a0e390}, NULL, 8) = 0
+00:33:47.851424 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+00:33:47.851450 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+00:33:47.851618 rt_sigaction(SIGUSR1, {0x561e9ad98296, ~[RTMIN RT_1], SA_RESTORER, 0x7f2ff6a0e390}, NULL, 8) = 0
+00:33:47.851647 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+00:33:47.851695 brk(NULL)               = 0x561e9bdb3000
+00:33:47.851713 brk(0x561e9bdd4000)     = 0x561e9bdd4000
+00:33:47.851737 write(1, "ready\n", 6)  = 6
+00:33:47.851836 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+00:33:47.851881 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+00:33:47.851935 getsockname(3, {sa_family=AF_NETLINK, pid=10771, groups=00000000}, [12]) = 0
+00:33:47.852227 sendto(3, "\24\0\0\0\26\0\1\3\353\200\r[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+00:33:47.852778 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0\353\200\r[\23*\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 164
+00:33:47.852835 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0\353\200\r[\23*\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+00:33:47.852863 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0\353\200\r[\23*\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+00:33:47.852901 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+00:33:47.852925 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+00:33:47.853041 close(4)                = 0
+00:33:47.853063 close(3)                = 0
+00:33:47.853088 socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+00:33:47.853124 connect(3, {sa_family=AF_INET, sin_port=htons(36629), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+00:33:47.853204 write(1, "connected\n", 10) = 10
+00:33:47.853266 fcntl(3, F_GETFL)       = 0x2 (flags O_RDWR)
+00:33:47.853306 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+00:33:47.853337 read(0, "send 149\n", 1024) = 9
+00:33:47.914032 read(0, "47455420687474703a2f2f3139322e31"..., 1024) = 299
+00:33:47.964129 fstat(3, {st_mode=S_IFSOCK|0777, st_size=0, ...}) = 0
+00:33:47.964194 write(3, "GET http://192.168.43.14:40041/ "..., 149) = 149
+00:33:47.964258 read(0, "readline\n", 1024) = 9
+00:33:48.419356 read(3, strace: Process 10771 detached
+ <detached ...>
+00:45:31.793604 execve("./client", ["./client", "127.0.0.1", "12016"], [/* 76 vars */]) = 0
+00:45:31.811803 brk(NULL)               = 0x557c06ef9000
+00:45:31.811928 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:45:31.812072 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+00:45:31.812177 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+00:45:31.812276 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+00:45:31.812345 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fc70dfb1000
+00:45:31.812411 close(3)                = 0
+00:45:31.812470 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:45:31.812549 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+00:45:31.812623 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+00:45:31.812686 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+00:45:31.812774 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc70dfb0000
+00:45:31.812845 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc70db98000
+00:45:31.812911 mprotect(0x7fc70dbb0000, 2093056, PROT_NONE) = 0
+00:45:31.812981 mmap(0x7fc70ddaf000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fc70ddaf000
+00:45:31.813060 mmap(0x7fc70ddb1000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fc70ddb1000
+00:45:31.813131 close(3)                = 0
+00:45:31.813197 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+00:45:31.813269 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+00:45:31.813333 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+00:45:31.813391 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+00:45:31.813449 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc70d7ce000
+00:45:31.813514 mprotect(0x7fc70d98e000, 2097152, PROT_NONE) = 0
+00:45:31.813586 mmap(0x7fc70db8e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7fc70db8e000
+00:45:31.813658 mmap(0x7fc70db94000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fc70db94000
+00:45:31.813729 close(3)                = 0
+00:45:31.813812 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc70dfaf000
+00:45:31.813874 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc70dfae000
+00:45:31.813933 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc70dfad000
+00:45:31.813992 arch_prctl(ARCH_SET_FS, 0x7fc70dfae700) = 0
+00:45:31.814176 mprotect(0x7fc70db8e000, 16384, PROT_READ) = 0
+00:45:31.814264 mprotect(0x7fc70ddaf000, 4096, PROT_READ) = 0
+00:45:31.814386 mprotect(0x557c062f1000, 4096, PROT_READ) = 0
+00:45:31.814453 mprotect(0x7fc70dfda000, 4096, PROT_READ) = 0
+00:45:31.814511 munmap(0x7fc70dfb1000, 167722) = 0
+00:45:31.814583 set_tid_address(0x7fc70dfae9d0) = 2964
+00:45:31.814632 set_robust_list(0x7fc70dfae9e0, 24) = 0
+00:45:31.814690 rt_sigaction(SIGRTMIN, {0x7fc70db9db50, [], SA_RESTORER|SA_SIGINFO, 0x7fc70dba9390}, NULL, 8) = 0
+00:45:31.814755 rt_sigaction(SIGRT_1, {0x7fc70db9dbe0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fc70dba9390}, NULL, 8) = 0
+00:45:31.814812 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+00:45:31.814877 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+00:45:31.814988 rt_sigaction(SIGUSR1, {0x557c060ed296, ~[RTMIN RT_1], SA_RESTORER, 0x7fc70dba9390}, NULL, 8) = 0
+00:45:31.815062 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+00:45:31.815237 brk(NULL)               = 0x557c06ef9000
+00:45:31.815297 brk(0x557c06f1a000)     = 0x557c06f1a000
+00:45:31.815365 write(1, "ready\n", 6)  = 6
+00:45:31.815470 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+00:45:31.815548 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+00:45:31.815619 getsockname(3, {sa_family=AF_NETLINK, pid=2964, groups=00000000}, [12]) = 0
+00:45:31.815716 sendto(3, "\24\0\0\0\26\0\1\3\253\203\r[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+00:45:31.815814 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0\253\203\r[\224\v\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 164
+00:45:31.815918 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0\253\203\r[\224\v\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+00:45:31.816011 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0\253\203\r[\224\v\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+00:45:31.816097 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+00:45:31.816172 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+00:45:31.817498 close(4)                = 0
+00:45:31.817577 close(3)                = 0
+00:45:31.817649 socket(PF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+00:45:31.817716 connect(3, {sa_family=AF_INET, sin_port=htons(12016), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+00:45:31.817886 write(1, "connected\n", 10) = 10
+00:45:31.817966 fcntl(3, F_GETFL)       = 0x2 (flags O_RDWR)
+00:45:31.818040 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 4), ...}) = 0
+00:45:31.818119 read(0, "send 68\n", 1024) = 8
+00:45:31.892842 read(0, "47455420687474703a2f2f3139322e31"..., 1024) = 137
+00:45:31.943064 fstat(3, {st_mode=S_IFSOCK|0777, st_size=0, ...}) = 0
+00:45:31.943178 write(3, "GET http://192.168.43.14:46873/ "..., 68) = 68
+00:45:31.943295 read(0, "readline\n", 1024) = 9
+00:45:32.248846 read(3, "", 4096)       = 0
+00:45:35.253426 write(1, "\n", 1)       = 1
+00:45:35.253532 read(0, strace: Process 2964 detached
+ <detached ...>
+03:07:02.970881 execve("./client", ["./client", "127.0.0.1", "13712"], [/* 76 vars */]) = 0
+03:07:02.985102 brk(NULL)               = 0x558997888000
+03:07:02.985429 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:02.985651 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+03:07:02.985807 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+03:07:02.985913 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+03:07:02.986004 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f05062ad000
+03:07:02.986083 close(3)                = 0
+03:07:02.986167 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:02.986260 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+03:07:02.987180 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+03:07:02.987297 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+03:07:02.987367 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f05062ac000
+03:07:02.987448 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f0505e94000
+03:07:02.987518 mprotect(0x7f0505eac000, 2093056, PROT_NONE) = 0
+03:07:02.987589 mmap(0x7f05060ab000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f05060ab000
+03:07:02.987676 mmap(0x7f05060ad000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f05060ad000
+03:07:02.987756 close(3)                = 0
+03:07:02.987828 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:02.987904 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+03:07:02.987977 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+03:07:02.988041 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+03:07:02.988107 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f0505aca000
+03:07:02.988176 mprotect(0x7f0505c8a000, 2097152, PROT_NONE) = 0
+03:07:02.988247 mmap(0x7f0505e8a000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f0505e8a000
+03:07:02.988351 mmap(0x7f0505e90000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f0505e90000
+03:07:02.988438 close(3)                = 0
+03:07:02.988537 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f05062ab000
+03:07:02.988617 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f05062aa000
+03:07:02.988691 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f05062a9000
+03:07:02.988763 arch_prctl(ARCH_SET_FS, 0x7f05062aa700) = 0
+03:07:02.988965 mprotect(0x7f0505e8a000, 16384, PROT_READ) = 0
+03:07:02.989065 mprotect(0x7f05060ab000, 4096, PROT_READ) = 0
+03:07:02.989195 mprotect(0x55899709b000, 4096, PROT_READ) = 0
+03:07:02.989283 mprotect(0x7f05062d6000, 4096, PROT_READ) = 0
+03:07:02.989348 munmap(0x7f05062ad000, 167722) = 0
+03:07:02.989425 set_tid_address(0x7f05062aa9d0) = 7854
+03:07:02.989500 set_robust_list(0x7f05062aa9e0, 24) = 0
+03:07:02.989564 rt_sigaction(SIGRTMIN, {0x7f0505e99b50, [], SA_RESTORER|SA_SIGINFO, 0x7f0505ea5390}, NULL, 8) = 0
+03:07:02.989633 rt_sigaction(SIGRT_1, {0x7f0505e99be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f0505ea5390}, NULL, 8) = 0
+03:07:02.989695 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+03:07:02.989765 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+03:07:02.989870 rt_sigaction(SIGUSR1, {0x558996e97296, ~[RTMIN RT_1], SA_RESTORER, 0x7f0505ea5390}, NULL, 8) = 0
+03:07:02.989947 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 5), ...}) = 0
+03:07:02.990091 brk(NULL)               = 0x558997888000
+03:07:02.990148 brk(0x5589978a9000)     = 0x5589978a9000
+03:07:02.990215 write(1, "ready\n", 6)  = 6
+03:07:02.990313 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+03:07:02.990381 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+03:07:02.990450 getsockname(3, {sa_family=AF_NETLINK, pid=7854, groups=00000000}, [12]) = 0
+03:07:02.990523 sendto(3, "\24\0\0\0\26\0\1\3V\366\16[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+03:07:02.990604 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0V\366\16[\256\36\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 76
+03:07:02.990693 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0V\366\16[\256\36\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+03:07:02.990767 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0V\366\16[\256\36\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+03:07:02.990835 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+03:07:02.990897 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+03:07:02.990976 close(4)                = 0
+03:07:02.991037 close(3)                = 0
+03:07:02.991132 write(2, "getaddrinfo failed (127.0.0.1:13"..., 80getaddrinfo failed (127.0.0.1:13712): Address family for hostname not supported
+) = 80
+03:07:02.991207 write(2, "Open_clientfd error: Success\n", 29Open_clientfd error: Success
+) = 29
+03:07:02.991307 exit_group(0)           = ?
+03:07:02.991497 +++ exited with 0 +++
+03:07:03.685318 execve("./client", ["./client", "127.0.0.1", "14426"], [/* 76 vars */]) = 0
+03:07:03.686217 brk(NULL)               = 0x5593f48f0000
+03:07:03.686370 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:03.686508 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+03:07:03.686631 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+03:07:03.686751 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+03:07:03.686868 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ffb80531000
+03:07:03.686981 close(3)                = 0
+03:07:03.687091 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:03.687211 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+03:07:03.687328 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+03:07:03.687441 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+03:07:03.687551 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffb80530000
+03:07:03.687675 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffb80118000
+03:07:03.687792 mprotect(0x7ffb80130000, 2093056, PROT_NONE) = 0
+03:07:03.687913 mmap(0x7ffb8032f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7ffb8032f000
+03:07:03.688040 mmap(0x7ffb80331000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffb80331000
+03:07:03.688161 close(3)                = 0
+03:07:03.688277 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:03.688468 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+03:07:03.688606 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+03:07:03.688731 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+03:07:03.689218 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ffb7fd4e000
+03:07:03.689343 mprotect(0x7ffb7ff0e000, 2097152, PROT_NONE) = 0
+03:07:03.689468 mmap(0x7ffb8010e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7ffb8010e000
+03:07:03.689587 mmap(0x7ffb80114000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ffb80114000
+03:07:03.689705 close(3)                = 0
+03:07:03.689837 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffb8052f000
+03:07:03.689958 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffb8052e000
+03:07:03.690073 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ffb8052d000
+03:07:03.690189 arch_prctl(ARCH_SET_FS, 0x7ffb8052e700) = 0
+03:07:03.690387 mprotect(0x7ffb8010e000, 16384, PROT_READ) = 0
+03:07:03.690508 mprotect(0x7ffb8032f000, 4096, PROT_READ) = 0
+03:07:03.690676 mprotect(0x5593f4004000, 4096, PROT_READ) = 0
+03:07:03.690801 mprotect(0x7ffb8055a000, 4096, PROT_READ) = 0
+03:07:03.690928 munmap(0x7ffb80531000, 167722) = 0
+03:07:03.691068 set_tid_address(0x7ffb8052e9d0) = 7871
+03:07:03.691184 set_robust_list(0x7ffb8052e9e0, 24) = 0
+03:07:03.691267 rt_sigaction(SIGRTMIN, {0x7ffb8011db50, [], SA_RESTORER|SA_SIGINFO, 0x7ffb80129390}, NULL, 8) = 0
+03:07:03.691307 rt_sigaction(SIGRT_1, {0x7ffb8011dbe0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7ffb80129390}, NULL, 8) = 0
+03:07:03.691346 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+03:07:03.691389 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+03:07:03.691447 rt_sigaction(SIGUSR1, {0x5593f3e00296, ~[RTMIN RT_1], SA_RESTORER, 0x7ffb80129390}, NULL, 8) = 0
+03:07:03.691492 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 5), ...}) = 0
+03:07:03.691561 brk(NULL)               = 0x5593f48f0000
+03:07:03.691598 brk(0x5593f4911000)     = 0x5593f4911000
+03:07:03.691638 write(1, "ready\n", 6)  = 6
+03:07:03.691691 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+03:07:03.691735 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+03:07:03.691776 getsockname(3, {sa_family=AF_NETLINK, pid=7871, groups=00000000}, [12]) = 0
+03:07:03.691818 sendto(3, "\24\0\0\0\26\0\1\3W\366\16[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+03:07:03.691867 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0W\366\16[\277\36\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 76
+03:07:03.691920 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0W\366\16[\277\36\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+03:07:03.691965 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0W\366\16[\277\36\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+03:07:03.692010 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+03:07:03.692050 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+03:07:03.692097 close(4)                = 0
+03:07:03.692137 close(3)                = 0
+03:07:03.692186 write(2, "getaddrinfo failed (127.0.0.1:14"..., 80getaddrinfo failed (127.0.0.1:14426): Address family for hostname not supported
+) = 80
+03:07:03.692233 write(2, "Open_clientfd error: Success\n", 29Open_clientfd error: Success
+) = 29
+03:07:03.692277 exit_group(0)           = ?
+03:07:03.692347 +++ exited with 0 +++
+03:07:04.390073 execve("./client", ["./client", "127.0.0.1", "16691"], [/* 76 vars */]) = 0
+03:07:04.390728 brk(NULL)               = 0x563f1660b000
+03:07:04.390850 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:04.390939 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+03:07:04.391007 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+03:07:04.391085 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+03:07:04.391167 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f4d9bdd4000
+03:07:04.391232 close(3)                = 0
+03:07:04.391292 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:04.391368 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+03:07:04.391440 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+03:07:04.391506 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+03:07:04.391568 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4d9bdd3000
+03:07:04.391649 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4d9b9bb000
+03:07:04.391720 mprotect(0x7f4d9b9d3000, 2093056, PROT_NONE) = 0
+03:07:04.391792 mmap(0x7f4d9bbd2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f4d9bbd2000
+03:07:04.391875 mmap(0x7f4d9bbd4000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4d9bbd4000
+03:07:04.391953 close(3)                = 0
+03:07:04.392022 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:04.392098 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+03:07:04.392170 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+03:07:04.392233 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+03:07:04.392296 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f4d9b5f1000
+03:07:04.392364 mprotect(0x7f4d9b7b1000, 2097152, PROT_NONE) = 0
+03:07:04.392434 mmap(0x7f4d9b9b1000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f4d9b9b1000
+03:07:04.392516 mmap(0x7f4d9b9b7000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f4d9b9b7000
+03:07:04.392592 close(3)                = 0
+03:07:04.392681 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4d9bdd2000
+03:07:04.392753 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4d9bdd1000
+03:07:04.392843 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f4d9bdd0000
+03:07:04.392917 arch_prctl(ARCH_SET_FS, 0x7f4d9bdd1700) = 0
+03:07:04.393082 mprotect(0x7f4d9b9b1000, 16384, PROT_READ) = 0
+03:07:04.393175 mprotect(0x7f4d9bbd2000, 4096, PROT_READ) = 0
+03:07:04.393298 mprotect(0x563f14a22000, 4096, PROT_READ) = 0
+03:07:04.393367 mprotect(0x7f4d9bdfd000, 4096, PROT_READ) = 0
+03:07:04.393429 munmap(0x7f4d9bdd4000, 167722) = 0
+03:07:04.393505 set_tid_address(0x7f4d9bdd19d0) = 7888
+03:07:04.393561 set_robust_list(0x7f4d9bdd19e0, 24) = 0
+03:07:04.393626 rt_sigaction(SIGRTMIN, {0x7f4d9b9c0b50, [], SA_RESTORER|SA_SIGINFO, 0x7f4d9b9cc390}, NULL, 8) = 0
+03:07:04.393694 rt_sigaction(SIGRT_1, {0x7f4d9b9c0be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f4d9b9cc390}, NULL, 8) = 0
+03:07:04.393756 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+03:07:04.393827 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+03:07:04.393939 rt_sigaction(SIGUSR1, {0x563f1481e296, ~[RTMIN RT_1], SA_RESTORER, 0x7f4d9b9cc390}, NULL, 8) = 0
+03:07:04.394018 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 5), ...}) = 0
+03:07:04.394176 brk(NULL)               = 0x563f1660b000
+03:07:04.394234 brk(0x563f1662c000)     = 0x563f1662c000
+03:07:04.394301 write(1, "ready\n", 6)  = 6
+03:07:04.394422 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+03:07:04.394496 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+03:07:04.394564 getsockname(3, {sa_family=AF_NETLINK, pid=7888, groups=00000000}, [12]) = 0
+03:07:04.394639 sendto(3, "\24\0\0\0\26\0\1\3X\366\16[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+03:07:04.394745 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0X\366\16[\320\36\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 76
+03:07:04.394844 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0X\366\16[\320\36\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+03:07:04.394925 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0X\366\16[\320\36\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+03:07:04.395010 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+03:07:04.395080 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+03:07:04.395168 close(4)                = 0
+03:07:04.395235 close(3)                = 0
+03:07:04.395330 write(2, "getaddrinfo failed (127.0.0.1:16"..., 80getaddrinfo failed (127.0.0.1:16691): Address family for hostname not supported
+) = 80
+03:07:04.395405 write(2, "Open_clientfd error: Success\n", 29Open_clientfd error: Success
+) = 29
+03:07:04.395485 exit_group(0)           = ?
+03:07:04.395662 +++ exited with 0 +++
+03:07:05.088557 execve("./client", ["./client", "127.0.0.1", "34448"], [/* 76 vars */]) = 0
+03:07:05.089535 brk(NULL)               = 0x561a311b6000
+03:07:05.089764 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:05.089933 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+03:07:05.090098 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+03:07:05.090251 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+03:07:05.090408 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f22e3d30000
+03:07:05.090530 close(3)                = 0
+03:07:05.090642 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:05.090779 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+03:07:05.090920 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+03:07:05.091051 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+03:07:05.091179 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f22e3d2f000
+03:07:05.091324 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f22e3917000
+03:07:05.091455 mprotect(0x7f22e392f000, 2093056, PROT_NONE) = 0
+03:07:05.091588 mmap(0x7f22e3b2e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f22e3b2e000
+03:07:05.091735 mmap(0x7f22e3b30000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f22e3b30000
+03:07:05.091876 close(3)                = 0
+03:07:05.092006 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:05.092146 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+03:07:05.092282 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+03:07:05.092406 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+03:07:05.092528 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f22e354d000
+03:07:05.092647 mprotect(0x7f22e370d000, 2097152, PROT_NONE) = 0
+03:07:05.092762 mmap(0x7f22e390d000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f22e390d000
+03:07:05.092893 mmap(0x7f22e3913000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f22e3913000
+03:07:05.092988 close(3)                = 0
+03:07:05.093092 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f22e3d2e000
+03:07:05.093183 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f22e3d2d000
+03:07:05.093263 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f22e3d2c000
+03:07:05.093340 arch_prctl(ARCH_SET_FS, 0x7f22e3d2d700) = 0
+03:07:05.093509 mprotect(0x7f22e390d000, 16384, PROT_READ) = 0
+03:07:05.093635 mprotect(0x7f22e3b2e000, 4096, PROT_READ) = 0
+03:07:05.093782 mprotect(0x561a30e31000, 4096, PROT_READ) = 0
+03:07:05.093870 mprotect(0x7f22e3d59000, 4096, PROT_READ) = 0
+03:07:05.093951 munmap(0x7f22e3d30000, 167722) = 0
+03:07:05.094048 set_tid_address(0x7f22e3d2d9d0) = 7905
+03:07:05.094123 set_robust_list(0x7f22e3d2d9e0, 24) = 0
+03:07:05.094208 rt_sigaction(SIGRTMIN, {0x7f22e391cb50, [], SA_RESTORER|SA_SIGINFO, 0x7f22e3928390}, NULL, 8) = 0
+03:07:05.094292 rt_sigaction(SIGRT_1, {0x7f22e391cbe0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f22e3928390}, NULL, 8) = 0
+03:07:05.094370 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+03:07:05.094458 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+03:07:05.094600 rt_sigaction(SIGUSR1, {0x561a30c2d296, ~[RTMIN RT_1], SA_RESTORER, 0x7f22e3928390}, NULL, 8) = 0
+03:07:05.094699 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 5), ...}) = 0
+03:07:05.094876 brk(NULL)               = 0x561a311b6000
+03:07:05.094954 brk(0x561a311d7000)     = 0x561a311d7000
+03:07:05.095038 write(1, "ready\n", 6)  = 6
+03:07:05.095169 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+03:07:05.095263 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+03:07:05.095349 getsockname(3, {sa_family=AF_NETLINK, pid=7905, groups=00000000}, [12]) = 0
+03:07:05.095446 sendto(3, "\24\0\0\0\26\0\1\3Y\366\16[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+03:07:05.095555 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0Y\366\16[\341\36\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 76
+03:07:05.095679 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0Y\366\16[\341\36\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+03:07:05.095782 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0Y\366\16[\341\36\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+03:07:05.095885 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+03:07:05.095969 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+03:07:05.096071 close(4)                = 0
+03:07:05.096155 close(3)                = 0
+03:07:05.096276 write(2, "getaddrinfo failed (127.0.0.1:34"..., 80getaddrinfo failed (127.0.0.1:34448): Address family for hostname not supported
+) = 80
+03:07:05.096395 write(2, "Open_clientfd error: Success\n", 29Open_clientfd error: Success
+) = 29
+03:07:05.096503 exit_group(0)           = ?
+03:07:05.096699 +++ exited with 0 +++
+03:07:05.788298 execve("./client", ["./client", "127.0.0.1", "41118"], [/* 76 vars */]) = 0
+03:07:05.790719 brk(NULL)               = 0x55bb73ad6000
+03:07:05.790873 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:05.790989 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+03:07:05.791081 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+03:07:05.791173 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+03:07:05.791245 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fee958b3000
+03:07:05.791315 close(3)                = 0
+03:07:05.791382 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:05.791458 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+03:07:05.791533 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+03:07:05.791605 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+03:07:05.791673 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fee958b2000
+03:07:05.791754 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fee9549a000
+03:07:05.791825 mprotect(0x7fee954b2000, 2093056, PROT_NONE) = 0
+03:07:05.791900 mmap(0x7fee956b1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fee956b1000
+03:07:05.792008 mmap(0x7fee956b3000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fee956b3000
+03:07:05.792091 close(3)                = 0
+03:07:05.792162 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:05.792244 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+03:07:05.792318 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+03:07:05.792385 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+03:07:05.792452 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fee950d0000
+03:07:05.792524 mprotect(0x7fee95290000, 2097152, PROT_NONE) = 0
+03:07:05.792597 mmap(0x7fee95490000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7fee95490000
+03:07:05.792680 mmap(0x7fee95496000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fee95496000
+03:07:05.792767 close(3)                = 0
+03:07:05.792902 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fee958b1000
+03:07:05.792987 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fee958b0000
+03:07:05.793060 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fee958af000
+03:07:05.793126 arch_prctl(ARCH_SET_FS, 0x7fee958b0700) = 0
+03:07:05.793284 mprotect(0x7fee95490000, 16384, PROT_READ) = 0
+03:07:05.793381 mprotect(0x7fee956b1000, 4096, PROT_READ) = 0
+03:07:05.793514 mprotect(0x55bb72dda000, 4096, PROT_READ) = 0
+03:07:05.793589 mprotect(0x7fee958dc000, 4096, PROT_READ) = 0
+03:07:05.793657 munmap(0x7fee958b3000, 167722) = 0
+03:07:05.793738 set_tid_address(0x7fee958b09d0) = 7922
+03:07:05.793802 set_robust_list(0x7fee958b09e0, 24) = 0
+03:07:05.793867 rt_sigaction(SIGRTMIN, {0x7fee9549fb50, [], SA_RESTORER|SA_SIGINFO, 0x7fee954ab390}, NULL, 8) = 0
+03:07:05.793937 rt_sigaction(SIGRT_1, {0x7fee9549fbe0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fee954ab390}, NULL, 8) = 0
+03:07:05.794002 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+03:07:05.794082 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+03:07:05.794205 rt_sigaction(SIGUSR1, {0x55bb72bd6296, ~[RTMIN RT_1], SA_RESTORER, 0x7fee954ab390}, NULL, 8) = 0
+03:07:05.794286 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 5), ...}) = 0
+03:07:05.794445 brk(NULL)               = 0x55bb73ad6000
+03:07:05.794505 brk(0x55bb73af7000)     = 0x55bb73af7000
+03:07:05.794574 write(1, "ready\n", 6)  = 6
+03:07:05.794800 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+03:07:05.795050 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+03:07:05.795141 getsockname(3, {sa_family=AF_NETLINK, pid=7922, groups=00000000}, [12]) = 0
+03:07:05.795457 sendto(3, "\24\0\0\0\26\0\1\3Y\366\16[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+03:07:05.795556 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0Y\366\16[\362\36\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 76
+03:07:05.795660 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0Y\366\16[\362\36\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+03:07:05.795745 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0Y\366\16[\362\36\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+03:07:05.795835 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+03:07:05.795912 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+03:07:05.796020 close(4)                = 0
+03:07:05.796088 close(3)                = 0
+03:07:05.796188 write(2, "getaddrinfo failed (127.0.0.1:41"..., 80getaddrinfo failed (127.0.0.1:41118): Address family for hostname not supported
+) = 80
+03:07:05.796288 write(2, "Open_clientfd error: Success\n", 29Open_clientfd error: Success
+) = 29
+03:07:05.796378 exit_group(0)           = ?
+03:07:05.796564 +++ exited with 0 +++
+03:07:06.491415 execve("./client", ["./client", "127.0.0.1", "56524"], [/* 76 vars */]) = 0
+03:07:06.492240 brk(NULL)               = 0x56004b462000
+03:07:06.492390 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:06.492528 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+03:07:06.492663 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+03:07:06.492794 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+03:07:06.492967 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fdc360d7000
+03:07:06.493069 close(3)                = 0
+03:07:06.493144 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:06.493242 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+03:07:06.493322 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+03:07:06.493398 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+03:07:06.493473 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdc360d6000
+03:07:06.493555 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdc35cbe000
+03:07:06.493627 mprotect(0x7fdc35cd6000, 2093056, PROT_NONE) = 0
+03:07:06.493701 mmap(0x7fdc35ed5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fdc35ed5000
+03:07:06.493791 mmap(0x7fdc35ed7000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdc35ed7000
+03:07:06.493877 close(3)                = 0
+03:07:06.493953 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:06.494031 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+03:07:06.494106 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+03:07:06.494176 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+03:07:06.494247 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdc358f4000
+03:07:06.494317 mprotect(0x7fdc35ab4000, 2097152, PROT_NONE) = 0
+03:07:06.494392 mmap(0x7fdc35cb4000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7fdc35cb4000
+03:07:06.494477 mmap(0x7fdc35cba000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdc35cba000
+03:07:06.494562 close(3)                = 0
+03:07:06.494658 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdc360d5000
+03:07:06.494737 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdc360d4000
+03:07:06.494808 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdc360d3000
+03:07:06.494877 arch_prctl(ARCH_SET_FS, 0x7fdc360d4700) = 0
+03:07:06.495043 mprotect(0x7fdc35cb4000, 16384, PROT_READ) = 0
+03:07:06.495133 mprotect(0x7fdc35ed5000, 4096, PROT_READ) = 0
+03:07:06.495259 mprotect(0x56004ac7e000, 4096, PROT_READ) = 0
+03:07:06.495334 mprotect(0x7fdc36100000, 4096, PROT_READ) = 0
+03:07:06.495403 munmap(0x7fdc360d7000, 167722) = 0
+03:07:06.495484 set_tid_address(0x7fdc360d49d0) = 7939
+03:07:06.495546 set_robust_list(0x7fdc360d49e0, 24) = 0
+03:07:06.495616 rt_sigaction(SIGRTMIN, {0x7fdc35cc3b50, [], SA_RESTORER|SA_SIGINFO, 0x7fdc35ccf390}, NULL, 8) = 0
+03:07:06.495689 rt_sigaction(SIGRT_1, {0x7fdc35cc3be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fdc35ccf390}, NULL, 8) = 0
+03:07:06.495757 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+03:07:06.495835 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+03:07:06.495956 rt_sigaction(SIGUSR1, {0x56004aa7a296, ~[RTMIN RT_1], SA_RESTORER, 0x7fdc35ccf390}, NULL, 8) = 0
+03:07:06.496041 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 5), ...}) = 0
+03:07:06.496201 brk(NULL)               = 0x56004b462000
+03:07:06.496265 brk(0x56004b483000)     = 0x56004b483000
+03:07:06.496338 write(1, "ready\n", 6)  = 6
+03:07:06.496455 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+03:07:06.496534 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+03:07:06.496615 getsockname(3, {sa_family=AF_NETLINK, pid=7939, groups=00000000}, [12]) = 0
+03:07:06.496692 sendto(3, "\24\0\0\0\26\0\1\3Z\366\16[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+03:07:06.496780 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0Z\366\16[\3\37\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 76
+03:07:06.496921 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0Z\366\16[\3\37\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+03:07:06.497013 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0Z\366\16[\3\37\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+03:07:06.497096 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+03:07:06.497182 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+03:07:06.497212 close(4)                = 0
+03:07:06.497234 close(3)                = 0
+03:07:06.497265 write(2, "getaddrinfo failed (127.0.0.1:56"..., 80getaddrinfo failed (127.0.0.1:56524): Address family for hostname not supported
+) = 80
+03:07:06.497292 write(2, "Open_clientfd error: Success\n", 29Open_clientfd error: Success
+) = 29
+03:07:06.497317 exit_group(0)           = ?
+03:07:06.497381 +++ exited with 0 +++
+03:07:07.203716 execve("./client", ["./client", "127.0.0.1", "6450"], [/* 76 vars */]) = 0
+03:07:07.204553 brk(NULL)               = 0x55d926eb3000
+03:07:07.204744 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:07.205019 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+03:07:07.205262 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+03:07:07.205464 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+03:07:07.205629 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7beb2b8000
+03:07:07.205786 close(3)                = 0
+03:07:07.205935 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:07.206107 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+03:07:07.206273 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+03:07:07.206427 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+03:07:07.206575 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7beb2b7000
+03:07:07.206732 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7beae9f000
+03:07:07.206877 mprotect(0x7f7beaeb7000, 2093056, PROT_NONE) = 0
+03:07:07.207029 mmap(0x7f7beb0b6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f7beb0b6000
+03:07:07.207188 mmap(0x7f7beb0b8000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7beb0b8000
+03:07:07.207342 close(3)                = 0
+03:07:07.207489 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:07.207639 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+03:07:07.207796 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+03:07:07.207942 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+03:07:07.208089 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f7beaad5000
+03:07:07.208234 mprotect(0x7f7beac95000, 2097152, PROT_NONE) = 0
+03:07:07.208381 mmap(0x7f7beae95000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f7beae95000
+03:07:07.208534 mmap(0x7f7beae9b000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7beae9b000
+03:07:07.208684 close(3)                = 0
+03:07:07.208864 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7beb2b6000
+03:07:07.209045 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7beb2b5000
+03:07:07.209190 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7beb2b4000
+03:07:07.209331 arch_prctl(ARCH_SET_FS, 0x7f7beb2b5700) = 0
+03:07:07.209573 mprotect(0x7f7beae95000, 16384, PROT_READ) = 0
+03:07:07.209733 mprotect(0x7f7beb0b6000, 4096, PROT_READ) = 0
+03:07:07.209929 mprotect(0x55d925c3c000, 4096, PROT_READ) = 0
+03:07:07.210072 mprotect(0x7f7beb2e1000, 4096, PROT_READ) = 0
+03:07:07.210213 munmap(0x7f7beb2b8000, 167722) = 0
+03:07:07.210366 set_tid_address(0x7f7beb2b59d0) = 7956
+03:07:07.210500 set_robust_list(0x7f7beb2b59e0, 24) = 0
+03:07:07.210643 rt_sigaction(SIGRTMIN, {0x7f7beaea4b50, [], SA_RESTORER|SA_SIGINFO, 0x7f7beaeb0390}, NULL, 8) = 0
+03:07:07.210793 rt_sigaction(SIGRT_1, {0x7f7beaea4be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f7beaeb0390}, NULL, 8) = 0
+03:07:07.210940 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+03:07:07.211097 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+03:07:07.211292 rt_sigaction(SIGUSR1, {0x55d925a38296, ~[RTMIN RT_1], SA_RESTORER, 0x7f7beaeb0390}, NULL, 8) = 0
+03:07:07.211456 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 5), ...}) = 0
+03:07:07.211691 brk(NULL)               = 0x55d926eb3000
+03:07:07.211827 brk(0x55d926ed4000)     = 0x55d926ed4000
+03:07:07.211971 write(1, "ready\n", 6)  = 6
+03:07:07.212147 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+03:07:07.212293 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+03:07:07.212441 getsockname(3, {sa_family=AF_NETLINK, pid=7956, groups=00000000}, [12]) = 0
+03:07:07.212600 sendto(3, "\24\0\0\0\26\0\1\3[\366\16[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+03:07:07.212766 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0[\366\16[\24\37\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 76
+03:07:07.212979 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0[\366\16[\24\37\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+03:07:07.213142 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0[\366\16[\24\37\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+03:07:07.213297 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+03:07:07.213439 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+03:07:07.213602 close(4)                = 0
+03:07:07.213744 close(3)                = 0
+03:07:07.213918 write(2, "getaddrinfo failed (127.0.0.1:64"..., 79getaddrinfo failed (127.0.0.1:6450): Address family for hostname not supported
+) = 79
+03:07:07.214111 write(2, "Open_clientfd error: Success\n", 29Open_clientfd error: Success
+) = 29
+03:07:07.214301 exit_group(0)           = ?
+03:07:07.214514 +++ exited with 0 +++
+03:07:07.988907 execve("./client", ["./client", "127.0.0.1", "62813"], [/* 76 vars */]) = 0
+03:07:07.990817 brk(NULL)               = 0x559cb6057000
+03:07:07.991699 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:07.992062 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+03:07:07.992187 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+03:07:07.992328 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+03:07:07.992454 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f813dc99000
+03:07:07.992571 close(3)                = 0
+03:07:07.992937 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:07.993025 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+03:07:07.993108 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+03:07:07.993183 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+03:07:07.993330 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f813dc98000
+03:07:07.993481 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f813d880000
+03:07:07.993655 mprotect(0x7f813d898000, 2093056, PROT_NONE) = 0
+03:07:07.993772 mmap(0x7f813da97000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f813da97000
+03:07:07.993901 mmap(0x7f813da99000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f813da99000
+03:07:07.994013 close(3)                = 0
+03:07:07.994114 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:07.994416 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+03:07:07.994453 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+03:07:07.994482 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+03:07:07.994509 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f813d4b6000
+03:07:07.994543 mprotect(0x7f813d676000, 2097152, PROT_NONE) = 0
+03:07:07.994742 mmap(0x7f813d876000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7f813d876000
+03:07:07.994778 mmap(0x7f813d87c000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f813d87c000
+03:07:07.994821 close(3)                = 0
+03:07:07.994944 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f813dc97000
+03:07:07.995101 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f813dc96000
+03:07:07.995133 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f813dc95000
+03:07:07.995231 arch_prctl(ARCH_SET_FS, 0x7f813dc96700) = 0
+03:07:07.995358 mprotect(0x7f813d876000, 16384, PROT_READ) = 0
+03:07:07.995404 mprotect(0x7f813da97000, 4096, PROT_READ) = 0
+03:07:07.995486 mprotect(0x559cb43d6000, 4096, PROT_READ) = 0
+03:07:07.995519 mprotect(0x7f813dcc2000, 4096, PROT_READ) = 0
+03:07:07.995797 munmap(0x7f813dc99000, 167722) = 0
+03:07:07.995834 set_tid_address(0x7f813dc969d0) = 7973
+03:07:07.995857 set_robust_list(0x7f813dc969e0, 24) = 0
+03:07:07.995882 rt_sigaction(SIGRTMIN, {0x7f813d885b50, [], SA_RESTORER|SA_SIGINFO, 0x7f813d891390}, NULL, 8) = 0
+03:07:07.996091 rt_sigaction(SIGRT_1, {0x7f813d885be0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f813d891390}, NULL, 8) = 0
+03:07:07.996124 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+03:07:07.996214 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+03:07:07.996297 rt_sigaction(SIGUSR1, {0x559cb41d2296, ~[RTMIN RT_1], SA_RESTORER, 0x7f813d891390}, NULL, 8) = 0
+03:07:07.996433 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 5), ...}) = 0
+03:07:07.996540 brk(NULL)               = 0x559cb6057000
+03:07:07.996567 brk(0x559cb6078000)     = 0x559cb6078000
+03:07:07.996653 write(1, "ready\n", 6)  = 6
+03:07:07.996741 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+03:07:07.996776 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+03:07:07.996806 getsockname(3, {sa_family=AF_NETLINK, pid=7973, groups=00000000}, [12]) = 0
+03:07:07.996852 sendto(3, "\24\0\0\0\26\0\1\3[\366\16[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+03:07:07.996909 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0[\366\16[%\37\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 76
+03:07:07.996948 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0[\366\16[%\37\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+03:07:07.996979 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0[\366\16[%\37\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+03:07:07.997009 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+03:07:07.997038 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+03:07:07.997341 close(4)                = 0
+03:07:07.997372 close(3)                = 0
+03:07:07.997405 write(2, "getaddrinfo failed (127.0.0.1:62"..., 80getaddrinfo failed (127.0.0.1:62813): Address family for hostname not supported
+) = 80
+03:07:07.997445 write(2, "Open_clientfd error: Success\n", 29Open_clientfd error: Success
+) = 29
+03:07:07.997481 exit_group(0)           = ?
+03:07:07.997544 +++ exited with 0 +++
+03:07:08.687733 execve("./client", ["./client", "127.0.0.1", "16723"], [/* 76 vars */]) = 0
+03:07:08.688156 brk(NULL)               = 0x55b4fef3b000
+03:07:08.688228 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:08.688288 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+03:07:08.688346 open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+03:07:08.688404 fstat(3, {st_mode=S_IFREG|0644, st_size=167722, ...}) = 0
+03:07:08.688461 mmap(NULL, 167722, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fdb81410000
+03:07:08.688514 close(3)                = 0
+03:07:08.688565 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:08.688627 open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+03:07:08.688682 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260`\0\0\0\0\0\0"..., 832) = 832
+03:07:08.688736 fstat(3, {st_mode=S_IFREG|0755, st_size=138696, ...}) = 0
+03:07:08.688789 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdb8140f000
+03:07:08.688857 mmap(NULL, 2212904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdb80ff7000
+03:07:08.688910 mprotect(0x7fdb8100f000, 2093056, PROT_NONE) = 0
+03:07:08.688963 mmap(0x7fdb8120e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fdb8120e000
+03:07:08.689023 mmap(0x7fdb81210000, 13352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdb81210000
+03:07:08.689079 close(3)                = 0
+03:07:08.689133 access("/etc/ld.so.nohwcap", F_OK) = -1 ENOENT (No such file or directory)
+03:07:08.689191 open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+03:07:08.689246 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\t\2\0\0\0\0\0"..., 832) = 832
+03:07:08.689298 fstat(3, {st_mode=S_IFREG|0755, st_size=1868984, ...}) = 0
+03:07:08.689352 mmap(NULL, 3971488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdb80c2d000
+03:07:08.689404 mprotect(0x7fdb80ded000, 2097152, PROT_NONE) = 0
+03:07:08.689459 mmap(0x7fdb80fed000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c0000) = 0x7fdb80fed000
+03:07:08.689516 mmap(0x7fdb80ff3000, 14752, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdb80ff3000
+03:07:08.689572 close(3)                = 0
+03:07:08.689634 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdb8140e000
+03:07:08.689689 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdb8140d000
+03:07:08.689741 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdb8140c000
+03:07:08.689794 arch_prctl(ARCH_SET_FS, 0x7fdb8140d700) = 0
+03:07:08.689886 mprotect(0x7fdb80fed000, 16384, PROT_READ) = 0
+03:07:08.689947 mprotect(0x7fdb8120e000, 4096, PROT_READ) = 0
+03:07:08.690041 mprotect(0x55b4fd14c000, 4096, PROT_READ) = 0
+03:07:08.690094 mprotect(0x7fdb81439000, 4096, PROT_READ) = 0
+03:07:08.690146 munmap(0x7fdb81410000, 167722) = 0
+03:07:08.690202 set_tid_address(0x7fdb8140d9d0) = 7990
+03:07:08.690251 set_robust_list(0x7fdb8140d9e0, 24) = 0
+03:07:08.690305 rt_sigaction(SIGRTMIN, {0x7fdb80ffcb50, [], SA_RESTORER|SA_SIGINFO, 0x7fdb81008390}, NULL, 8) = 0
+03:07:08.690361 rt_sigaction(SIGRT_1, {0x7fdb80ffcbe0, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7fdb81008390}, NULL, 8) = 0
+03:07:08.690415 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+03:07:08.690474 getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+03:07:08.690557 rt_sigaction(SIGUSR1, {0x55b4fcf48296, ~[RTMIN RT_1], SA_RESTORER, 0x7fdb81008390}, NULL, 8) = 0
+03:07:08.690629 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 5), ...}) = 0
+03:07:08.690720 brk(NULL)               = 0x55b4fef3b000
+03:07:08.690771 brk(0x55b4fef5c000)     = 0x55b4fef5c000
+03:07:08.690824 write(1, "ready\n", 6)  = 6
+03:07:08.690893 socket(PF_NETLINK, SOCK_RAW, NETLINK_ROUTE) = 3
+03:07:08.690950 bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+03:07:08.691002 getsockname(3, {sa_family=AF_NETLINK, pid=7990, groups=00000000}, [12]) = 0
+03:07:08.691060 sendto(3, "\24\0\0\0\26\0\1\3\\\366\16[\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+03:07:08.691126 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0\\\366\16[6\37\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 76
+03:07:08.691193 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0\\\366\16[6\37\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 144
+03:07:08.691251 recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0\\\366\16[6\37\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+03:07:08.691310 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+03:07:08.691361 connect(4, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+03:07:08.691423 close(4)                = 0
+03:07:08.691472 close(3)                = 0
+03:07:08.691530 write(2, "getaddrinfo failed (127.0.0.1:16"..., 80getaddrinfo failed (127.0.0.1:16723): Address family for hostname not supported
+) = 80
+03:07:08.691590 write(2, "Open_clientfd error: Success\n", 29Open_clientfd error: Success
+) = 29
+03:07:08.691642 exit_group(0)           = ?
+03:07:08.691729 +++ exited with 0 +++
